@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Welcome to Market Treemaps</h1>
-<p>Please access the files through the following url format</p>
-<p>https://wkyjim.github.io/market_treemaps/location/file name</p>
-<p>location: US, HK, CN</p>
-<p>file name: YYYY-MM-DD_data type_treemap</p>
-<p>data type: pct_change, 5D_pct_change, 10D_pct_change, 20D_pct_change;</p>
-<p>data type: volume, Vol_SMA5, Vol_SMA10, Vol_SMA20;</p>
-<p>data type: amount, AMT_SMA5, AMT_SMA10, AMT_SMA20</p>
-</body>
+<html dir="ltr">
+	<head>
+		<title>Treemaps</title>
+	</head>
+	<body style="background-color:rgb(0, 49, 82);">
+		<h1 style="color:rgb(190,190,190);">Welcome to Market Treemaps</h1>
+		<h2 style="color:rgb(190,190,190);">Please fill in the form</h2>
+		<form id="form">
+			<h4 style="color:rgb(190,190,190);">
+				<label for="location">Choose market:</label>
+			</h4>
+			<select style="color:rgb(29, 41, 81);" id="location" name="location">
+				<option value="US">U.S.</option>
+				<option value="HK">Hong Kong</option>
+				<option value="CN">China</option>
+			</select>
+			<h4 style="color:rgb(190,190,190);">
+				<label for="data_type">Choose a data type:</label>
+			</h4>
+			<select style="color:rgb(29, 41, 81);" id="data_type" name="data_type">
+				<option value="pct_change">Percentage change</option>
+				<option value="amount">Amount</option>
+				<option value="volume">Volume</option>
+			</select>
+			<h4 style="color:rgb(190,190,190);">
+				<label for="day_range">Choose periods:</label>
+			</h4>
+			<select style="color:rgb(29, 41, 81);" id="day_range" name="day_range">
+				<option value="1D">1 day</option>
+				<option value="5D">5 days</option>
+				<option value="10D">10 days</option>
+				<option value="20D">20 days</option>
+			</select>
+			<br></br>
+			<br></br>
+			<button style="background-color:white; color:rgb(29, 41, 81);" type="submit" id="button">Get graphs</button>
+		</form>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script>
+  $(document).ready(function () {
+    $("#form").on('submit', function (e) {
+      e.preventDefault();
+      window.location.replace("https://wkyjim.github.io/market_treemaps/" + $("#location").val() + "/latest_" + $("#day_range").val() + "_" + $("#data_type").val() + "_treemap");
+    });
+  });
+</script>
+	</body>
 </html>

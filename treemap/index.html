@@ -4,38 +4,41 @@
 		<title>Treemaps</title>
 	</head>
 	<body style="background-color:rgb(0, 49, 82);">
-		<h1 style="color:rgb(190,190,190);">Welcome to Market Treemaps</h1>
-		<h2 style="color:rgb(190,190,190);">Please fill in the form</h2>
+		<h1 style="color:rgb(190,190,190);text-align:center;">Welcome to Market Treemaps</h1>
+		<h2 style="color:rgb(190,190,190);text-align:center;">Please fill in the form</h2>
 		<form id="form">
-			<h4 style="color:rgb(190,190,190);">
+			<h4 style="color:rgb(190,190,190);text-align:center;">
 				<label for="location">Choose market:</label>
 			</h4>
-			<select style="color:rgb(29, 41, 81);" id="location" name="location">
+<div style="text-align:center">			
+<select style="color:rgb(29, 41, 81);" id="location" name="location">
 				<option value="US">U.S.</option>
 				<option value="HK">Hong Kong</option>
 				<option value="CN">China</option>
-			</select>
-			<h4 style="color:rgb(190,190,190);">
+			</select></div>
+			<h4 style="color:rgb(190,190,190);text-align:center">
 				<label for="data_type">Choose a data type:</label>
 			</h4>
+<div style="text-align:center">	
 			<select style="color:rgb(29, 41, 81);" id="data_type" name="data_type">
 				<option value="pct_change">Percentage change</option>
 				<option value="amount">Amount</option>
 				<option value="pct_x_amount">Percentage Change Amount Multiple</option>
 				<option value="volume">Volume</option>
-			</select>
-			<h4 style="color:rgb(190,190,190);">
+			</select></div>
+			<h4 style="color:rgb(190,190,190);text-align:center">
 				<label for="day_range">Choose periods:</label>
 			</h4>
+<div style="text-align:center">	
 			<select style="color:rgb(29, 41, 81);" id="day_range" name="day_range">
 				<option value="1D">1 day</option>
 				<option value="5D">5 days</option>
 				<option value="10D">10 days</option>
 				<option value="20D">20 days</option>
-			</select>
+			</select></div>
 			<br></br>
-			<br></br>
-			<button style="background-color:white; color:rgb(29, 41, 81);" type="submit" id="button">Get graphs</button>
+<div style="text-align:center">				
+<button style="background-color:white; color:rgb(29, 41, 81);" type="submit" id="button">Get graphs</button></div>
 		</form>
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script>

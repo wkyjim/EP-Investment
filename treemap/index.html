@@ -2,6 +2,81 @@
 <html dir="ltr">
 	<head>
 		<title>Treemaps</title>
+		<style>
+   .logo {
+	width:250px;
+	height:30px;
+	position:absolute;
+	top: 2%;
+	left: 2%;
+    }    
+    .page_links { 
+        text-decoration: none;
+        color:rgba(255, 255, 255,1);
+        font-family:Trebuchet MS;
+        font-size:120%;
+        margin: 5px;
+	font-weight:bold;
+    }
+
+    .page_links_container {
+	    position: absolute;
+  	    top: 2%;
+  	    right: 2%;
+    }
+
+    .top_bg_container {
+	    position: relative;
+ 	    text-align: center;
+    }
+
+    .top_bg {
+	    max-width:100%;
+    }
+    .title_container {
+    color:rgb(76,81,109);
+    text-align:center;
+    }
+
+    .title_text_frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:100px;
+        border: 10px solid white;
+        background-color:rgba(0,0,0,0.5);
+    }
+    .title_text {
+        color:rgba(255,255,255,1);
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .title_discription_text {
+        color:rgba(255,255,255,1);
+        font-size: 20px;
+    } 
+    
+    .form_block {
+    	position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .form_title {
+    	color:rgb(255,255,255,1);
+	text-align:center;
+    }
+    .form_signle_block {
+   	display:inline-block;
+	margin:15px;
+    }
+    .treemap_container {
+    	display:flex;
+	justify-content:center;
+    }
+</style>
 		<script type="text/javascript">
         function setIframeSource() {
             var theLoc = document.getElementById('location');
@@ -14,64 +89,81 @@
             document.getElementById("myUrl").innerHTML = theUrl;
 	    theIframe.src = theUrl;
         }
+
     </script>
 	</head>
-	<body onload = "setIframeSource()">
-		<p style="display:none;">
-			<span id="myUrl"></span>
-		</p>
-		<h1 style="color:rgb(76,81,109);text-align:center;">Market Treemaps</h1>
-		<h2 style="color:rgb(76,81,109);text-align:center;">Please choose market, data type and day range</h2>
-		<form id="form1" method="post">
-			<div style="text-align:center">
-				<div style="display:inline-block;margin:8px">
-					<h4 style="color:rgb(76,81,109);text-align:center;">
-						<label for="location">Market</label>
-					</h4>
-					<div style="text-align:center">
-						<select style="color:rgb(29, 41, 81);" id="location" name="location" onchange="setIframeSource()">
-							<option value="US" >U.S.</option>
-							<option value="HK" >Hong Kong</option>
-							<option value="CN" >China</option>
-						</select>
+	<body onload = "setIframeSource()" style="font-family:Trebuchet MS">
+		<div class="top_bg_container">
+			<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/market_treemaps/photos/low-angle-view-skyscrapers.jpg">
+				<img class="logo" alt="EP Investment" src="https://wkyjim.github.io/market_treemaps/photos/logo.png">
+					<div class="page_links_container" style="text-align:right;float:right;">
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index">Home</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/treemap/">Market Treemaps</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/broad_market/">Broad Market Analysis</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index_analysis/">Index Analysis</a>
 					</div>
-				</div>
-				<div style="display:inline-block;margin:8px">
-					<h4 style="color:rgb(76,81,109);text-align:center">
-						<label for="day_range">Day Range</label>
-					</h4>
-					<div style="text-align:center">
-						<select style="color:rgb(29, 41, 81);" id="day_range" name="day_range" onchange="setIframeSource()">
-							<option value="1D">1 day</option>
-							<option value="5D">5 days</option>
-							<option value="10D">10 days</option>
-							<option value="20D">20 days</option>
-						</select>
+					<div class="title_text_frame">
+						<p class="title_text">Market Treemaps</p>
+						<p class="title_discription_text">Please choose market, data type and day range</p>
 					</div>
+					<p style="display:none;">
+						<span id="myUrl"></span>
+					</p>
+					<form id="form1" method="post">
+						<div class="form_block">
+							<div class="form_signle_block">
+								<h4 class="form_title">
+									<label for="location">Market</label>
+								</h4>
+								<div style="text-align:center">
+									<select style="color:rgb(29, 41, 81);" id="location" name="location" onchange="setIframeSource()">
+										<option value="US" >U.S.</option>
+										<option value="HK" >Hong Kong</option>
+										<option value="CN" >China</option>
+									</select>
+								</div>
+							</div>
+							<div class="form_signle_block">
+								<h4 class="form_title">
+									<label for="day_range">Day Range</label>
+								</h4>
+								<div style="text-align:center">
+									<select style="color:rgb(29, 41, 81);" id="day_range" name="day_range" onchange="setIframeSource()">
+										<option value="1D">1 day</option>
+										<option value="5D">5 days</option>
+										<option value="10D">10 days</option>
+										<option value="20D">20 days</option>
+									</select>
+								</div>
+							</div>
+							<div class="form_signle_block">
+								<h4 class="form_title">
+									<label for="data_type">Data Type</label>
+								</h4>
+								<div style="text-align:center">
+									<select style="color:rgb(29, 41, 81);" id="data_type" name="data_type" onchange="setIframeSource()">
+										<option value="pct_change">Percentage change</option>
+										<option value="amount">Amount</option>
+										<option value="pct_x_amount">Percentage Change Amount Multiple</option>
+										<option value="volume">Volume</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
-				<div style="display:inline-block;margin:8px">
-					<h4 style="color:rgb(76,81,109);text-align:center">
-						<label for="data_type">Data Type</label>
-					</h4>
-					<div style="text-align:center">
-						<select style="color:rgb(29, 41, 81);" id="data_type" name="data_type" onchange="setIframeSource()">
-							<option value="pct_change">Percentage change</option>
-							<option value="amount">Amount</option>
-							<option value="pct_x_amount">Percentage Change Amount Multiple</option>
-							<option value="volume">Volume</option>
-						</select>
-					</div>
-				</div>
-			</div>
-		</form>
-		<div class="treemap_container" style="display:flex;justify-content:center;">
-			<iframe id="treemapIframe" src=""
+				<div class="treemap_container">
+					<iframe id="treemapIframe" src=""
 			frameborder="0" width="100%" height="1000"></iframe>
-			<script>
+					<script>
     document.getElementById("treemapIframe").src =
-				<span id="myUrl"></span>;
+				
+						
+						<span id="myUrl"></span>;
 
-			</script>
-		</div>
-	</body>
-</html>
+			
+					
+					</script>
+				</div>
+			</body>
+		</html>

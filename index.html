@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html dir="ltr">
 	<head>
-		<title>Market Analysis</title>
+		<title>EP Investment</title>
 		<style>
+    .logo {
+	width:250px;
+	height:30px;
+	position:absolute;
+	top: 2%;
+	left: 2%;
+    }    
     .page_links { 
         text-decoration: none;
-        color:rgb(76,81,109);
+        color:rgba(255,255,255,1);
         font-family:Trebuchet MS;
         font-size:120%;
         margin: 5px;
     }
-    .head_bg {
-        background-color:rgb(29,41,81);
-        height:300px;
-        width:100%;
-        display:table;
-        text-align: center;
+
+    .page_links_container {
+	    position: absolute;
+  	    top: 2%;
+  	    right: 2%;
     }
-    .title_block_text_group { 
-    color:rgb(114,133,165);
-    display:table-cell;
-    vertical-align:middle;
+
+    .top_bg_container {
+	    position: relative;
+ 	    text-align: center;
+    }
+
+    .top_bg {
+	    max-width:100%;
+    }
+
+    .title_text_frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:100px;
+        border: 10px solid white;
+        background-color:rgba(0,0,0,0.5);
+    }
+    .title_text {
+        color:rgba(255,255,255,1);
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .title_discription_text {
+        color:rgba(255,255,255,1);
+        font-size: 20px;
     }
   </style>
 	</head>
 	<body style="font-family:Trebuchet MS;">
-		<div class="top_bar"></div>
-		<div class="logo_container" style="text-align:left;float:left">
-			<iframe id="logo" src="https://wkyjim.github.io/market_treemaps/photos/logo.png"
-			frameborder="0" width="250px" height="30px"></iframe>
-		</div>
-		<div style="text-align:right;float:right;">
-			<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index">Home</a>
-			<a class="page_links" href="https://wkyjim.github.io/market_treemaps/treemap/">Market Treemaps</a>
-			<a class="page_links" href="https://wkyjim.github.io/market_treemaps/broad_market/">Broad Market Analysis</a>
-			<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index_analysis/">Index Analysis</a>
-		</div>
-	</div>
-	<div class="head_bg" style="text-align:center">
-		<div class="title_block_text_group">
-			<h1 class="title_block">Welcome to EP Investment</h1>
-			<h3 class="welcome_msg"style="color:rgb(76,81,109);">Welcome! We aim to offer data-driven analysis that helps with your investment, from understanding the market trend to spoting the outperformers. Share our site to your friends if you like it!  </h3>
-		</div>
-	</div>
-</body>
-</html>
+		<div class="top_bg_container">
+			<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/market_treemaps/photos/shiny-night-city.jpg">
+				<img class="logo" alt="EP Investment" src="https://wkyjim.github.io/market_treemaps/photos/logo.png">
+					<div class="page_links_container" style="text-align:right;float:right;">
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index">Home</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/treemap/">Market Treemaps</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/broad_market/">Broad Market Analysis</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index_analysis/">Index Analysis</a>
+					</div>
+					<div class="title_text_frame">
+						<p class="title_text">Simple & Intuitive</p>
+						<p class="title_discription_text">Do you find it time-consuming to monitor the market?
+							
+							<br>Do you feel frustrated because market changes quickly?
+								
+								<br>Do you have difficulties in finding opportunities?
+									
+									<br>Don't let them stop you!
+										
+										<br>We offer data-driven analysis that helps with your investment, from understanding the trend to spotting the outperformers. With our charts, navigating through the market will become a no brainer. Share us to your friends if you like it!
+										
+										</p>
+									</div>
+								</div>
+							</body>
+						</html>

@@ -2,86 +2,146 @@
 <html>
 	<head>
 		<title>Index Analysis</title>
+		<style>
+   .logo {
+	width:250px;
+	height:30px;
+	position:absolute;
+	top: 2%;
+	left: 2%;
+    }    
+    .page_links { 
+        text-decoration: none;
+        color:rgba(255, 255, 255,1);
+        font-family:Trebuchet MS;
+        font-size:120%;
+        margin: 5px;
+	font-weight:bold;
+    }
+
+    .page_links_container {
+	    position: absolute;
+  	    top: 2%;
+  	    right: 2%;
+    }
+
+    .top_bg_container {
+	    position: relative;
+ 	    text-align: center;
+    }
+
+    .top_bg {
+	    max-width:100%;
+    }
+    .title_container {
+    color:rgb(76,81,109);
+    text-align:center;
+    }
+
+    .title_text_frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:100px;
+        border: 10px solid white;
+        background-color:rgba(0,0,0,0.5);
+    }
+    .title_text {
+        color:rgba(255,255,255,1);
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .title_discription_text {
+        color:rgba(255,255,255,1);
+        font-size: 20px;
+    } 
+    .chart_heading {
+	text-align:center; 
+	color:rgb(76,81,109);
+	font-size:40px;
+	font-weight:bold;
+    }
+</style>
 	</head>
-	<body>
-		<h1 style="text-align:center; color:rgb(76,81,109);">Index Analysis</h1>
-		<h4 style="text-align:center; color:rgb(76,81,109);">The following tables show the number of days an index stays above or below moving average lines</h4>
-<br>
-</br>		
-<h3 style="text-align:center; color:rgb(76,81,109);">US Market Indices Trend</h3>
-		<div class="us_index_analysis_container" style="display:flex;justify-content:center;">
-			
-<iframe id="spx"
+	<body style="font-family:Trebuchet MS">
+		<div class="top_bg_container">
+			<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/market_treemaps/photos/skyscrapers-from-low-angle-view.jpg">
+				<img class="logo" alt="EP Investment" src="https://wkyjim.github.io/market_treemaps/photos/logo.png">
+					<div class="page_links_container" style="text-align:right;float:right;">
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index">Home</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/treemap/">Market Treemaps</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/broad_market/">Broad Market Analysis</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index_analysis/">Index Analysis</a>
+					</div>
+					<div class="title_text_frame">
+						<p class="title_text">Index Analysis</p>
+						<p class="title_discription_text">The following tables show the number of days an index stays above or below moving average lines</p>
+					</div>
+				</div>
+				<p class="chart_heading">US Market Index Trend</p>
+				<div class="us_index_analysis_container" style="display:flex;justify-content:center;">
+					<iframe id="spx"
     title="spx_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/US/SPX_index_analysis"
 frameborder="0"></iframe>
-			
-<iframe id="ndx"
+					<iframe id="ndx"
     title="ndx_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/US/NDX_index_analysis"
 frameborder="0"></iframe>
-
-<iframe id="djia"
+					<iframe id="djia"
     title="djia_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/US/DJIA_index_analysis"
 frameborder="0"></iframe>
-		</div>
-<br>
-</br>
-<h3 style="text-align:center; color:rgb(76,81,109);">Hong Kong Market Indices Trend</h3>
-		<div class="hk_index_analysis_container" style="display:flex;justify-content:center;">
-			
-<iframe id="hsi"
+				</div>
+				<br></br>
+				<p class="chart_heading">Hong Kong Market Index Trend</p>
+				<div class="hk_index_analysis_container" style="display:flex;justify-content:center;">
+					<iframe id="hsi"
     title="hsi_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/HK/HSI_index_analysis"
 frameborder="0"></iframe>
-			
-<iframe id="hsci"
+					<iframe id="hsci"
     title="hsci_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/HK/HSCI_index_analysis"
 frameborder="0"></iframe>
-
-<iframe id="hstech"
+					<iframe id="hstech"
     title="hstech_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/HK/HSTECH_index_analysis"
 frameborder="0"></iframe>
-		</div>
-
-<h3 style="text-align:center; color:rgb(76,81,109);">China Market Indices Trend</h3>
-		<div class="cn_index_analysis_container" style="display:flex;justify-content:center;">
-			
-<iframe id="000300"
+				</div>
+				<p class="chart_heading">China Market Index Trend</p>
+				<div class="cn_index_analysis_container" style="display:flex;justify-content:center;">
+					<iframe id="000300"
     title="000300_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/CN/000300_index_analysis"
 frameborder="0"></iframe>
-			
-<iframe id="000001"
+					<iframe id="000001"
     title="000001_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/CN/000001_index_analysis"
 frameborder="0"></iframe>
-
-<iframe id="399001"
+					<iframe id="399001"
     title="399001_analysis"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/index_analysis/CN/399001_index_analysis"
 frameborder="0"></iframe>
-		</div>
-	</body>
-</html>
+				</div>
+			</body>
+		</html>

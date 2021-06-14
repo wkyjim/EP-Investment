@@ -36,29 +36,29 @@
 	    max-width:100%;
     }
 
+    .title_container {
+    color:rgb(76,81,109);
+    text-align:center;
+    }
+
     .title_text_frame {
         position: absolute;
         top: 50%;
         left: 50%;
 	height:35vw;
 	width: 50vw;
-	margin:0px;
-	padding:0px;
         transform: translate(-50%, -50%);
         border: 1.2vw solid white;
         background-color:rgba(0,0,0,0.5);
     }
     .sub_title_text_frame {
+	height:30vw;
+	width: 40vw;
 	position: absolute;
         top: 50%;
         left: 50%;
-	height:30vw;
-	width: 40vw;
-	margin:0px;
-	padding:0px;
         transform: translate(-50%, -50%);
     }
-
     .title_text {
         color:rgba(255,255,255,1);
         font-size: 4vw;
@@ -66,7 +66,7 @@
     }
     .title_discription_text {
         color:rgba(255,255,255,1);
-        font-size: 1.2vw;
+        font-size: 1.5vw;
     } 
     .chart_heading {
 	text-align:center; 
@@ -74,6 +74,39 @@
 	font-size:4vw;
 	font-weight:bold;
     }
+    .external_contents *{
+	position: relative;
+	display: inline-block;
+    	text-align: center;
+    }
+    .calender_rss >*{
+	display: block;
+	position: absolute;
+	width:40vw;
+	height:40vw;
+    }
+    .calender {
+	position: absolute;
+	width:40vw;
+	height:20vw;
+	top:0vw;
+	border:0px;
+    }
+    .rss {
+	position: absolute;
+	width:40vw;
+	height:20vw;
+	top:21vw;
+	border:0px;
+    }
+    .candle_chart {
+	position: absolute;
+	width:57vw;
+	height:42vw;
+	left:41vw;
+	border:0px;
+    }
+
   </style>
 	</head>
 	<body style="font-family:Trebuchet MS;">
@@ -85,6 +118,7 @@
 						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/treemap/">Market Treemaps</a>
 						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/broad_market/">Broad Market Analysis</a>
 						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index_analysis/">Index Analysis</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/news">News Feeds</a>
 					</div>
 					<div class="title_text_frame">
 						<div class="sub_title_text_frame">
@@ -97,5 +131,19 @@
 										</p></div>
 									</div>
 								</div>
-							</body>
-						</html>
+
+<div class="external_contents">		
+
+<div class="calender_rss">			
+<iframe class="calender" src="https://sslecal2.forexprostools.com?ecoDayBackground=%237385a6&defaultFont=%234d526e&innerBorderColor=%23c0cfd6&borderColor=%234d526e&columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&features=datepicker,timezone,timeselector,filters&countries=25,6,37,72,17,35,4,5&calType=week&timeZone=28&lang=1" 
+			width="650" height="400" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+<iframe class="rss" width="650" height="400" class="rss" 
+src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fwww.cnbc.com%2Fid%2F100003114%2Fdevice%2Frss%2Frss.html&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&showdate=1&linktarget=_blank&fullhtml=1&bordercol=%23d4d0c8&headbgcol=%234c516d&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%231d2951&ctl=0"></iframe>
+</div>
+
+
+			<iframe class="candle_chart" height="800" width="1000" src="https://ssltvc.forexprostools.com/?pair_ID=166&height=1100&width=1900&interval=86400&plotStyle=candles&domain_ID=1&lang_ID=1&timezone_ID=7"></iframe>
+
+</div>
+</body>
+</html>

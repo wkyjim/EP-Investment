@@ -2,60 +2,147 @@
 <html>
 	<head>
 		<title>Broad Market Analysis</title>
-	</head>
-	<body>
-		<h1 style="text-align:center; color:rgb(76,81,109);">Broad Market Analysis</h1>
-		<h3 style="text-align:center; color:rgb(76,81,109);">The following tables show percentage of stocks closed with positive returns or above moving average lines in a market</h3>
-<br>
-</br>		
+		<style>
+   .logo {
+	width:250px;
+	height:30px;
+	position:absolute;
+	top: 2%;
+	left: 2%;
+    }    
+    .page_links { 
+        text-decoration: none;
+        color:rgba(255, 255, 255,1);
+        font-family:Trebuchet MS;
+        font-size:120%;
+        margin: 5px;
+	font-weight:bold;
+    }
 
-<div class="us_broad_market_analysis_container" style="display:flex;justify-content:center;">	
-<iframe id="us_broad_market"
+    .page_links_container {
+	    position: absolute;
+  	    top: 2%;
+  	    right: 2%;
+    }
+
+    .top_bg_container {
+	    position: relative;
+ 	    text-align: center;
+    }
+
+    .top_bg {
+	    max-width:100%;
+    }
+    .title_container {
+    color:rgb(76,81,109);
+    text-align:center;
+    }
+
+    .title_text_frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:100px;
+        border: 10px solid white;
+        background-color:rgba(0,0,0,0.5);
+    }
+    .title_text {
+        color:rgba(255,255,255,1);
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .title_discription_text {
+        color:rgba(255,255,255,1);
+        font-size: 20px;
+    } 
+    
+    .form_block {
+    	position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .form_title {
+    	color:rgb(255,255,255,1);
+	text-align:center;
+    }
+    .form_signle_block {
+   	display:inline-block;
+	margin:15px;
+    }
+    .treemap_container {
+    	display:flex;
+	justify-content:center;
+    }
+    .chart_heading {
+	text-align:center; 
+	color:rgb(76,81,109);
+	font-size:40px;
+	font-weight:bold;
+    }
+</style>
+	</head>
+	<body style="font-family:Trebuchet MS">
+		<div class="top_bg_container">
+			<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/market_treemaps/photos/office-building-low-angle.jpg">
+				<img class="logo" alt="EP Investment" src="https://wkyjim.github.io/market_treemaps/photos/logo.png">
+					<div class="page_links_container" style="text-align:right;float:right;">
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index">Home</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/treemap/">Market Treemaps</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/broad_market/">Broad Market Analysis</a>
+						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index_analysis/">Index Analysis</a>
+					</div>
+					<div class="title_text_frame">
+						<p class="title_text">Broad Market Analysis</p>
+						<p class="title_discription_text">The following tables show percentage of stocks closed with positive returns or above moving average lines in a market</p>
+					</div>
+				</div>
+				<p class="chart_heading">US Market Analysis</p>
+				<div class="us_broad_market_analysis_container" style="display:flex;justify-content:center;">
+					<iframe id="us_broad_market"
     title="us_broad_market"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/broad_market/US/us_broad_market_analysis"
 frameborder="0"></iframe>
-
-<iframe id="us_ma"
+					<iframe id="us_ma"
     title="us_ma"
     width="1000"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/broad_market/US/above_ma_plot"
 frameborder="0"></iframe>
-</div>
-
-<div class="hk_broad_market_analysis_container" style="display:flex;justify-content:center;">			
-<iframe id="hk_broad_market"
+				</div>
+				<p class="chart_heading">Hong Kong Market Analysis</p>
+				<div class="hk_broad_market_analysis_container" style="display:flex;justify-content:center;">
+					<iframe id="hk_broad_market"
     title="hk_broad_market"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/broad_market/HK/hk_broad_market_analysis"
 frameborder="0"></iframe>
-
-<iframe id="hk_ma"
+					<iframe id="hk_ma"
     title="hk_ma"
     width="1000"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/broad_market/HK/above_ma_plot"
 frameborder="0"></iframe>
-</div>
-
-<div class="cn_broad_market_analysis_container" style="display:flex;justify-content:center;">			
-<iframe id="cn_broad_market"
+				</div>
+				<p class="chart_heading">China Market Analysis</p>
+				<div class="cn_broad_market_analysis_container" style="display:flex;justify-content:center;">
+					<iframe id="cn_broad_market"
     title="cn_broad_market"
     width="500"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/broad_market/CN/cn_broad_market_analysis"
 frameborder="0"></iframe>
-
-<iframe id="cn_ma"
+					<iframe id="cn_ma"
     title="cn_ma"
     width="1000"
     height="550"
     src="https://wkyjim.github.io/market_treemaps/broad_market/CN/above_ma_plot"
 frameborder="0"></iframe>
-</div>
-
-	</body>
-</html>
+				</div>
+			</body>
+		</html>

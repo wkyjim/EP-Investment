@@ -4,8 +4,8 @@
 		<title>Treemaps</title>
 		<style>
    .logo {
-	width:250px;
-	height:30px;
+	width:20vw;
+	height:2.5vw;
 	position:absolute;
 	top: 2%;
 	left: 2%;
@@ -14,11 +14,13 @@
         text-decoration: none;
         color:rgba(255,255,255,1);
         font-family:Trebuchet MS;
-        font-size:120%;
+	font-weight:bold;
+        font-size:1.5vw;
 	border-right:2px solid white;
-	padding-right:10px;
-	padding-left:5px;
+	padding-right:1vw;
+	padding-left:1vw;
     }
+
 
     .page_links_container {
 	    position: absolute;
@@ -43,37 +45,69 @@
         position: absolute;
         top: 50%;
         left: 50%;
-	max-height:30%;
-	max-width: 80%;
+	height:35vw;
+	width: 50vw;
         transform: translate(-50%, -50%);
-        padding:10%;
-        border: 10px solid white;
+        border: 1.2vw solid white;
         background-color:rgba(0,0,0,0.5);
+    }
+    .sub_title_text_frame {
+	position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .title_text {
         color:rgba(255,255,255,1);
-        font-size: 4rem;
+        font-size: 4vw;
         font-weight: bold;
     }
     .title_discription_text {
         color:rgba(255,255,255,1);
-        font-size: 1.5rem;
+        font-size: 1.5vw;
     } 
+    .chart_heading {
+	text-align:center; 
+	color:rgb(76,81,109);
+	font-size:4vw;
+	font-weight:bold;
+    }
     
     .form_block {
     	position: absolute;
         top: 85%;
         left: 50%;
+	width:100vw;
         transform: translate(-50%, -50%);
     }
 
     .form_title {
     	color:rgb(255,255,255,1);
 	text-align:center;
+	margin:0.5vw;
+    }
+    .form_label {
+   	font-size:1.5vw;
+	font-weight:bold;
     }
     .form_signle_block {
    	display:inline-block;
-	margin:15px;
+	margin-right:1vw;
+	margin-left:1vw;
+    }
+    .dropdown_box {
+	color:rgb(29, 41, 81);
+	width:15vw;
+	height:2vw;
+	font-size:1vw;
+	text-align-last: center;
+   	text-align: center;
+   	-ms-text-align-last: center;
+   	-moz-text-align-last: center;
+    }
+    .comment {
+	font-size:2vw;
+	color:rgba(29,41,81,1);
     }
     .treemap_container {
     	display:flex;
@@ -106,8 +140,10 @@
 						<a class="page_links" href="https://wkyjim.github.io/market_treemaps/index_analysis/">Index Analysis</a>
 					</div>
 					<div class="title_text_frame">
+						<div class="sub_title_text_frame">
 						<p class="title_text">Market Treemaps</p>
 						<p class="title_discription_text">Please choose market, data type and day range</p>
+						</div>
 					</div>
 					<p style="display:none;">
 						<span id="myUrl"></span>
@@ -116,10 +152,10 @@
 						<div class="form_block">
 							<div class="form_signle_block">
 								<h4 class="form_title">
-									<label for="location">Market</label>
+									<label class="form_label" for="location">Market</label>
 								</h4>
 								<div style="text-align:center">
-									<select style="color:rgb(29, 41, 81);" id="location" name="location" onchange="setIframeSource()">
+									<select class="dropdown_box" id="location" name="location" onchange="setIframeSource()">
 										<option value="US" >U.S.</option>
 										<option value="HK" >Hong Kong</option>
 										<option value="CN" >China</option>
@@ -128,10 +164,10 @@
 							</div>
 							<div class="form_signle_block">
 								<h4 class="form_title">
-									<label for="day_range">Day Range</label>
+									<label class="form_label" for="day_range">Day Range</label>
 								</h4>
 								<div style="text-align:center">
-									<select style="color:rgb(29, 41, 81);" id="day_range" name="day_range" onchange="setIframeSource()">
+									<select class="dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
 										<option value="1D">1 day</option>
 										<option value="5D">5 days</option>
 										<option value="10D">10 days</option>
@@ -141,11 +177,11 @@
 							</div>
 							<div class="form_signle_block">
 								<h4 class="form_title">
-									<label for="data_type">Data Type</label>
+									<label class="form_label" for="data_type">Data Type</label>
 								</h4>
 								<div style="text-align:center">
-									<select style="color:rgb(29, 41, 81);" id="data_type" name="data_type" onchange="setIframeSource()">
-										<option value="pct_change">Percentage change</option>
+									<select class="dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
+										<option value="pct_change">Percentage Change</option>
 										<option value="amount">Amount</option>
 										<option value="pct_x_amount">Percentage Change Amount Multiple</option>
 										<option value="volume">Volume</option>
@@ -155,6 +191,7 @@
 						</div>
 					</form>
 				</div>
+				<p class="comment">Percentage change plot shows outperformers and underperformers;<br> Amount and Volume plots show stocks with highest transaction;<br>Percentage change Volume Multiple plot shows stocks surged or plunged due to high volume.</p>
 				<div class="treemap_container">
 					<iframe id="treemapIframe" src=""
 			frameborder="0" width="100%" height="1000"></iframe>

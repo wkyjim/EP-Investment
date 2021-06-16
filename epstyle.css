@@ -6,6 +6,7 @@
 .top_bg {
     max-width: 100%;
 }
+
 .logo {
     width: 20vw;
     height: 2.5vw;
@@ -51,11 +52,6 @@
     transform: translate(-50%, -50%);
     margin: 0px;
     padding: 0px;
-}
-
-.title_container {
-    color: rgb(76,81,109);
-    text-align: center;
 }
 
 .title_text {
@@ -111,4 +107,9 @@
     height: 42vw;
     left: 41vw;
     border: 0px;
+}
+
+.broad_market_analysis_container {
+    display: flex;
+    justify-content: center;
 }

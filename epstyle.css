@@ -129,3 +129,55 @@
     display: flex;
     justify-content: center;
 }
+
+.treemap_form_block {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+}
+
+.form_title {
+    color: rgb(255,255,255,1);
+    text-align: center;
+    margin: 0.5vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.form_label {
+
+}
+
+.treemap_form_signle_block {
+    display: inline-block;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.treemap_dropdown_box {
+    background-color: #F5F5F5;
+    color: #4c516d;
+    border: none;
+    box-shadow: 0.3vw 0.3vw 0.3vw #C8C8C8;
+    width: 15vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+.treemap_container {
+    display: flex;
+    justify-content: center;
+}
+
+.explanation {
+    font-size: 2vw;
+    color: rgba(29,41,81,1);
+}
+

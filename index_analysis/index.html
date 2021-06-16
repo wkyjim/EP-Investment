@@ -2,81 +2,11 @@
 <html>
 	<head>
 		<title>Index Analysis</title>
-		<style>
-   .logo {
-	width:20vw;
-	height:2.5vw;
-	position:absolute;
-	top: 2%;
-	left: 2%;
-    }    
-    .page_links { 
-        text-decoration: none;
-        color:rgba(255,255,255,1);
-        font-family:Trebuchet MS;
-	font-weight:bold;
-        font-size:1.5vw;
-	border-right:2px solid white;
-	padding-right:1vw;
-	padding-left:1vw;
-    }
-
-    .page_links_container {
-	    position: absolute;
-  	    top: 2%;
-  	    right: 2%;
-    }
-
-    .top_bg_container {
-	    position: relative;
- 	    text-align: center;
-    }
-
-    .top_bg {
-	    max-width:100%;
-    }
-    .title_container {
-    color:rgb(76,81,109);
-    text-align:center;
-    }
-
-    .title_text_frame {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-	height:35vw;
-	width: 50vw;
-        transform: translate(-50%, -50%);
-        border: 1.2vw solid white;
-        background-color:rgba(0,0,0,0.5);
-    }
-    .sub_title_text_frame {
-	position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .title_text {
-        color:rgba(255,255,255,1);
-        font-size: 4vw;
-        font-weight: bold;
-    }
-    .title_discription_text {
-        color:rgba(255,255,255,1);
-        font-size: 1.5vw;
-    } 
-    .chart_heading {
-	text-align:center; 
-	color:rgb(76,81,109);
-	font-size:4vw;
-	font-weight:bold;
-    }
-</style>
 	</head>
 	<body style="font-family:Trebuchet MS">
 		<div class="top_bg_container">
 			<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/skyscrapers-from-low-angle-view.jpg">
-				<img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png">
+			<a href="https://wkyjim.github.io/EP-Investment/index"> <img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png"> </a>
 					<div class="page_links_container" style="text-align:right;float:right;">
 						<a class="page_links" href="https://wkyjim.github.io/EP-Investment/index">Home</a>
 						<a class="page_links" href="https://wkyjim.github.io/EP-Investment/treemap/">Market Treemaps</a>
@@ -92,7 +22,7 @@
 					</div>
 				</div>
 				<p class="chart_heading">US Market Index Trend</p>
-				<div class="us_index_analysis_container" style="display:flex;justify-content:center;">
+				<div class="index_analysis_container">
 					<iframe id="spx"
     title="spx_analysis"
     width="500"
@@ -114,7 +44,7 @@ frameborder="0"></iframe>
 				</div>
 				<br></br>
 				<p class="chart_heading">Hong Kong Market Index Trend</p>
-				<div class="hk_index_analysis_container" style="display:flex;justify-content:center;">
+				<div class="index_analysis_container">
 					<iframe id="hsi"
     title="hsi_analysis"
     width="500"
@@ -135,7 +65,7 @@ frameborder="0"></iframe>
 frameborder="0"></iframe>
 				</div>
 				<p class="chart_heading">China Market Index Trend</p>
-				<div class="cn_index_analysis_container" style="display:flex;justify-content:center;">
+				<div class="index_analysis_container">
 					<iframe id="000300"
     title="000300_analysis"
     width="500"

@@ -197,20 +197,23 @@
 
 .fb-share-button {
     display: inline-block;
-    height:2vw;
+    height: 2vw;
+    width: 2vw;
     margin: 0.5vw 2vw 0.5vw 2vw;
     top: 0.5vw;
 }
 
 .linkedin-share-button-frame {
     display: inline-block;
-    height:2vw;
+    width: 2vw;
+    height: 2vw;
     margin: 0.5vw 2vw 0.5vw 2vw;
     top: 0.5vw;
 }
 
 .twitter-share-button-frame {
     display: inline-block;
+    width: 2vw;
     height: 2vw;
     margin: 0.5vw 2vw 0.5vw 2vw;
     top: 0.5vw;

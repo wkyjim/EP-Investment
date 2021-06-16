@@ -1,0 +1,114 @@
+.top_bg_container {
+    position: relative;
+    text-align: center;
+}
+
+.top_bg {
+    max-width: 100%;
+}
+.logo {
+    width: 20vw;
+    height: 2.5vw;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.page_links_container {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.page_links {
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-right: 2px solid white;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.title_text_frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 35vw;
+    width: 50vw;
+    transform: translate(-50%, -50%);
+    border: 1.2vw solid white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.sub_title_text_frame {
+    height: 30vw;
+    width: 35vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+}
+
+.title_container {
+    color: rgb(76,81,109);
+    text-align: center;
+}
+
+.title_text {
+    color: rgba(255,255,255,1);
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.title_discription_text {
+    color: rgba(255,255,255,1);
+    font-size: 1.2vw;
+}
+
+.chart_heading {
+    text-align: center;
+    color: rgb(76,81,109);
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.external_contents * {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.calender_rss > * {
+    display: block;
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+}
+
+.calender {
+    position: absolute;
+    width: 40vw;
+    height: 20vw;
+    top: 0vw;
+    border: 0px;
+}
+
+.rss {
+    position: absolute;
+    width: 40vw;
+    height: 20vw;
+    top: 21vw;
+    border: 0px;
+}
+
+.candle_chart {
+    position: absolute;
+    width: 57vw;
+    height: 42vw;
+    left: 41vw;
+    border: 0px;
+}

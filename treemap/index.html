@@ -2,128 +2,7 @@
 <html dir="ltr">
 	<head>
 		<title>Treemaps</title>
-		<style>
-   .logo {
-	width:20vw;
-	height:2.5vw;
-	position:absolute;
-	top: 2%;
-	left: 2%;
-    }    
-    .page_links { 
-        text-decoration: none;
-        color:rgba(255,255,255,1);
-        font-family:Trebuchet MS;
-	font-weight:bold;
-        font-size:1.5vw;
-	border-right:2px solid white;
-	padding-right:1vw;
-	padding-left:1vw;
-    }
 
-
-    .page_links_container {
-	    position: absolute;
-  	    top: 2%;
-  	    right: 2%;
-    }
-
-    .top_bg_container {
-	    position: relative;
- 	    text-align: center;
-    }
-
-    .top_bg {
-	    max-width:100%;
-    }
-    .title_container {
-    color:rgb(76,81,109);
-    text-align:center;
-    }
-
-    .title_text_frame {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-	height:35vw;
-	width: 50vw;
-        transform: translate(-50%, -50%);
-        border: 1.2vw solid white;
-        background-color:rgba(0,0,0,0.5);
-    }
-    .sub_title_text_frame {
-	position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .title_text {
-        color:rgba(255,255,255,1);
-        font-size: 4vw;
-        font-weight: bold;
-    }
-    .title_discription_text {
-        color:rgba(255,255,255,1);
-        font-size: 1.5vw;
-    } 
-    .chart_heading {
-	text-align:center; 
-	color:rgb(76,81,109);
-	font-size:4vw;
-	font-weight:bold;
-    }
-    
-    .form_block {
-    	position: absolute;
-        top: 85%;
-        left: 50%;
-	width:100vw;
-        transform: translate(-50%, -50%);
-    }
-
-    .form_title {
-    	color:rgb(255,255,255,1);
-	text-align:center;
-	margin:0.5vw;
-    }
-    .form_label {
-   	font-size:1.5vw;
-	font-weight:bold;
-    }
-    .form_signle_block {
-   	display:inline-block;
-	margin-right:1vw;
-	margin-left:1vw;
-    }
-    .dropdown_box {
-	background-color: #F5F5F5;
-	color: #4c516d;
-    	border: none;
-	box-shadow:0.3vw 0.3vw 0.3vw #C8C8C8;
-	width:15vw;
-	height:3vw;
-	font-size:1.5vw;
-	cursor: pointer;
-	text-align-last: center;
-   	text-align: center;
-   	-ms-text-align-last: center;
-   	-moz-text-align-last: center;
-    }
-    
-    option {
-    border-radius: 0px;
-    background-color: transparent;
-    }
-
-    .comment {
-	font-size:2vw;
-	color:rgba(29,41,81,1);
-    }
-    .treemap_container {
-    	display:flex;
-	justify-content:center;
-    }
-</style>
 		<script type="text/javascript">
         function setIframeSource() {
             var theLoc = document.getElementById('location');
@@ -142,8 +21,8 @@
 	<body onload = "setIframeSource()" style="font-family:Trebuchet MS">
 		<div class="top_bg_container">
 			<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/low-angle-view-skyscrapers.jpg">
-				<img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png">
-					<div class="page_links_container" style="text-align:right;float:right;">
+			<a href="https://wkyjim.github.io/EP-Investment/index"> <img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png"> </a>
+					<div class="page_links_container" >
 						<a class="page_links" href="https://wkyjim.github.io/EP-Investment/index">Home</a>
 						<a class="page_links" href="https://wkyjim.github.io/EP-Investment/treemap/">Market Treemaps</a>
 						<a class="page_links" href="https://wkyjim.github.io/EP-Investment/broad_market/">Broad Market Analysis</a>
@@ -160,16 +39,16 @@
 						<span id="myUrl"></span>
 					</p>
 					<form id="form1" method="post">
-						<div class="form_block">
+						<div class="treemap_form_block">
 							<div class="form_signle_block">
 								<h4 class="form_title">
 									<label class="form_label" for="location">Market</label>
 								</h4>
 								<div style="text-align:center">
-									<select class="dropdown_box" id="location" name="location" onchange="setIframeSource()">
-										<option class="dropdown_option" value="US" >U.S.</option>
-										<option class="dropdown_option" value="HK" >Hong Kong</option>
-										<option class="dropdown_option" value="CN" >China</option>
+									<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
+										<option value="US" >U.S.</option>
+										<option value="HK" >Hong Kong</option>
+										<option value="CN" >China</option>
 									</select>
 								</div>
 							</div>
@@ -178,7 +57,7 @@
 									<label class="form_label" for="day_range">Day Range</label>
 								</h4>
 								<div style="text-align:center">
-									<select class="dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
+									<select class="treemap_dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
 										<option value="1D">1 day</option>
 										<option value="5D">5 days</option>
 										<option value="10D">10 days</option>
@@ -191,7 +70,7 @@
 									<label class="form_label" for="data_type">Data Type</label>
 								</h4>
 								<div style="text-align:center">
-									<select class="dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
+									<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
 										<option value="pct_change">Percentage Change</option>
 										<option value="amount">Amount</option>
 										<option value="pct_x_amount">Percentage Change Amount Multiple</option>
@@ -202,7 +81,7 @@
 						</div>
 					</form>
 				</div>
-				<p class="comment">Percentage change plot shows outperformers and underperformers;
+				<p class="explanation">Percentage change plot shows outperformers and underperformers;
 					<br> Amount and Volume plots show stocks with highest transaction;
 						<br>Percentage change Volume Multiple plot shows stocks surged or plunged due to high volume.
 						</p>

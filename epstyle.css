@@ -142,12 +142,12 @@
     color: rgb(255,255,255,1);
     text-align: center;
     margin: 0.5vw;
-    font-size: 1.5vw;
-    font-weight: bold;
+
 }
 
 .form_label {
-
+    font-size: 1.5vw;
+    font-weight: bold;
 }
 
 .treemap_form_signle_block {

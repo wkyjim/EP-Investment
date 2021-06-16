@@ -68,7 +68,7 @@
 .chart_heading {
     text-align: center;
     color: rgb(76,81,109);
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: bold;
 }
 
@@ -78,7 +78,7 @@
     text-align: center;
 }
 
-.calender_rss > * {
+.calender_new > * {
     display: block;
     position: absolute;
     width: 40vw;
@@ -93,7 +93,7 @@
     border: 0px;
 }
 
-.rss {
+.home_news {
     position: absolute;
     width: 40vw;
     height: 20vw;
@@ -112,4 +112,15 @@
 .broad_market_analysis_container {
     display: flex;
     justify-content: center;
+}
+
+.news_news_gp {
+    display: flex;
+    justify-content: center;
+}
+
+.news_news {
+    width: 32vw;
+    height: 20vw;
+    border: 0px;
 }

@@ -44,14 +44,11 @@
 }
 
 .sub_title_text_frame {
-    height: 30vw;
     width: 35vw;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0px;
-    padding: 0px;
 }
 
 .title_text {
@@ -63,6 +60,7 @@
 .title_discription_text {
     color: rgba(255,255,255,1);
     font-size: 1.2vw;
+    margin-top: 3vw;
 }
 
 .chart_heading {
@@ -142,7 +140,6 @@
     color: rgb(255,255,255,1);
     text-align: center;
     margin: 0.5vw;
-
 }
 
 .form_label {
@@ -180,4 +177,3 @@
     font-size: 2vw;
     color: rgba(29,41,81,1);
 }
-

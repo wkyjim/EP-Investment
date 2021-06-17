@@ -1,23 +1,29 @@
 <html dir="ltr">
-	<head>
-		<title>Treemaps</title>
-		<link rel="stylesheet" href="https://wkyjim.github.io/EP-Investment/epstyle.css">
+<head>
+	<title>Treemaps</title>
+	<link rel="stylesheet" href="https://wkyjim.github.io/EP-Investment/epstyle.css">
+	<!-- Facebook share icon -->
+	<meta property="og:url" content="https://wkyjim.github.io/EP-Investment/index" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="EP Investment" />
+	<meta property="og:description" content="We offer simple and intuitive charts that help you invest better" />
+	<meta property="og:image" content="https://wkyjim.github.io/EP-Investment/photos/landmarks-modern-city.jpg" />
 
-		<script type="text/javascript">
-        function setIframeSource() {
-            var theLoc = document.getElementById('location');
-	    var theDataType = document.getElementById('data_type');
-	    var theDayRange = document.getElementById('day_range');
-            var theIframe = document.getElementById('treemapIframe');
-            var theUrl;
+	<script type="text/javascript">
+		function setIframeSource() {
+			var theLoc = document.getElementById('location');
+			var theDataType = document.getElementById('data_type');
+			var theDayRange = document.getElementById('day_range');
+			var theIframe = document.getElementById('treemapIframe');
+			var theUrl;
 
-	    theUrl = "https://wkyjim.github.io/EP-Investment/treemap/" + theLoc.options[theLoc.selectedIndex].value + "/latest_" + theDayRange.options[theDayRange.selectedIndex].value + "_" + theDataType.options[theDataType.selectedIndex].value + "_treemap";
-            document.getElementById("myUrl").innerHTML = theUrl;
-	    theIframe.src = theUrl;
-        }
+			theUrl = "https://wkyjim.github.io/EP-Investment/treemap/" + theLoc.options[theLoc.selectedIndex].value + "/latest_" + theDayRange.options[theDayRange.selectedIndex].value + "_" + theDataType.options[theDataType.selectedIndex].value + "_treemap";
+			document.getElementById("myUrl").innerHTML = theUrl;
+			theIframe.src = theUrl;
+		}
 
-    </script>
-	</head>
+	</script>
+</head>
 	<body onload="setIframeSource()">
 		<div class="top_bg_container">
 			<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/low-angle-view-skyscrapers.jpg">

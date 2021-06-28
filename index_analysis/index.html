@@ -8,20 +8,40 @@
 	<meta property="og:title" content="EP Investment" />
 	<meta property="og:description" content="We offer simple and intuitive charts that help you invest better" />
 	<meta property="og:image" content="https://wkyjim.github.io/EP-Investment/photos/landmarks-modern-city.jpg" />
+
+	<!-- Side Navigation-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 	<div class="top_bg_container">
-		<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/low-angle-view-skyscrapers.jpg">
+		<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/6.jpg">
 		<a href="https://wkyjim.github.io/EP-Investment/index"> <img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png"> </a>
-		<div class="page_links_container">
-			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/index">Home</a>
-			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/treemap/">Market Treemaps</a>
-			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/stock_connect/">Stock Connect</a>
-			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/valuation/">Valuation</a>
-			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/broad_market/">Broad Market Analysis</a>
-			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/index_analysis/">Index Analysis</a>
-			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/news">News Feeds</a>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="https://wkyjim.github.io/EP-Investment/index">Home</a>
+			<a href="https://wkyjim.github.io/EP-Investment/treemap/">Market Treemaps</a>
+			<a href="https://wkyjim.github.io/EP-Investment/stock_connect/">Stock Connect</a>
+			<a href="https://wkyjim.github.io/EP-Investment/valuation/">Valuation</a>
+			<a href="https://wkyjim.github.io/EP-Investment/broad_market/">Broad Market Analysis</a>
+			<a href="https://wkyjim.github.io/EP-Investment/index_analysis/">Index Analysis</a>
+			<a href="https://wkyjim.github.io/EP-Investment/news/">News Feeds</a>
 		</div>
+		<div class="menu-button" onclick="openNav()">
+			<div class="stroke"></div>
+			<div class="stroke"></div>
+			<div class="stroke"></div>
+		</div>
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "35vw";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
 		<div class="title_text_frame">
 			<div class="sub_title_text_frame">
 				<div class="title_text">Index Analysis</div>

@@ -1,6 +1,6 @@
 <html dir="ltr">
 <head>
-	<title>Treemaps</title>
+	<title>Valuation</title>
 	<link rel="stylesheet" href="https://wkyjim.github.io/EP-Investment/epstyle.css">
 	<!-- Facebook share icon -->
 	<meta property="og:url" content="https://wkyjim.github.io/EP-Investment/index" />
@@ -17,128 +17,115 @@
 			var theIframe = document.getElementById('treemapIframe');
 			var theUrl;
 
-			theUrl = "https://wkyjim.github.io/EP-Investment/treemap/" + theLoc.options[theLoc.selectedIndex].value + "/latest_" + theDayRange.options[theDayRange.selectedIndex].value + "_" + theDataType.options[theDataType.selectedIndex].value + "_treemap";
+			theUrl = "https://wkyjim.github.io/EP-Investment/valuation/" + theLoc.options[theLoc.selectedIndex].value + "/latest_" + theDataType.options[theDataType.selectedIndex].value + "_treemap";
 			document.getElementById("myUrl").innerHTML = theUrl;
 			theIframe.src = theUrl;
 		}
 
 	</script>
 </head>
-	<body onload="setIframeSource()">
-		<div class="top_bg_container">
-			<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/low-angle-view-skyscrapers.jpg">
-			<a href="https://wkyjim.github.io/EP-Investment/index"> <img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png"> </a>
-			<div class="page_links_container">
-				<a class="page_links" href="https://wkyjim.github.io/EP-Investment/index">Home</a>
-				<a class="page_links" href="https://wkyjim.github.io/EP-Investment/treemap/">Market Treemaps</a>
-				<a class="page_links" href="https://wkyjim.github.io/EP-Investment/broad_market/">Broad Market Analysis</a>
-				<a class="page_links" href="https://wkyjim.github.io/EP-Investment/index_analysis/">Index Analysis</a>
-				<a class="page_links" href="https://wkyjim.github.io/EP-Investment/news">News Feeds</a>
-			</div>
-			<div class="title_text_frame">
-				<div class="sub_title_text_frame">
-					<div class="title_text">Market Treemaps</div>
-					<div class="title_discription_text">Please choose market, data type and day range</div>
-				</div>
-			</div>
-			<p style="display:none;">
-				<span id="myUrl"></span>
-			</p>
-			<form id="form1" method="post">
-				<div class="treemap_form_block">
-					<div class="treemap_form_signle_block">
-						<h4 class="form_title">
-							<label class="form_label" for="location">Market</label>
-						</h4>
-						<div style="text-align:center">
-							<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
-								<option value="US">U.S.</option>
-								<option value="HK">Hong Kong</option>
-								<option value="CN">China</option>
-							</select>
-						</div>
-					</div>
-					<div class="treemap_form_signle_block">
-						<h4 class="form_title">
-							<label class="form_label" for="day_range">Day Range</label>
-						</h4>
-						<div style="text-align:center">
-							<select class="treemap_dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
-								<option value="1D">1 day</option>
-								<option value="5D">5 days</option>
-								<option value="10D">10 days</option>
-								<option value="20D">20 days</option>
-							</select>
-						</div>
-					</div>
-					<div class="treemap_form_signle_block">
-						<h4 class="form_title">
-							<label class="form_label" for="data_type">Data Type</label>
-						</h4>
-						<div style="text-align:center">
-							<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
-								<option value="pct_change">Percentage Change</option>
-								<option value="amount">Amount</option>
-								<option value="pct_x_amount">Percentage Change Amount Multiple</option>
-								<option value="volume">Volume</option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</form>
+<body onload="setIframeSource()">
+	<div class="top_bg_container">
+		<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/low-angle-view-skyscrapers.jpg">
+		<a href="https://wkyjim.github.io/EP-Investment/index"> <img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png"> </a>
+		<div class="page_links_container">
+			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/index">Home</a>
+			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/treemap/">Market Treemaps</a>
+			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/stock_connect/">Stock Connect</a>
+			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/valuation/">Valuation</a>
+			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/broad_market/">Broad Market Analysis</a>
+			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/index_analysis/">Index Analysis</a>
+			<a class="page_links" href="https://wkyjim.github.io/EP-Investment/news">News Feeds</a>
 		</div>
-		<p class="explanation">
-			Percentage change plot shows outperformers and underperformers;
-			<br> Amount and Volume plots show stocks with highest transaction;
-			<br>Percentage change Volume Multiple plot shows stocks surged or plunged due to high volume.
+		<div class="title_text_frame">
+			<div class="sub_title_text_frame">
+				<div class="title_text">Valuation Treemaps</div>
+				<div class="title_discription_text">Please choose market and data type</div>
+			</div>
+		</div>
+		<p style="display:none;">
+			<span id="myUrl"></span>
 		</p>
-		<div class="treemap_container">
-			<iframe id="treemapIframe" src=""
-					frameborder="0" width="100%" height="1000"></iframe>
-			<script>
-				document.getElementById("treemapIframe").src =
-
-
-
-					<span id="myUrl"></span>;
-
-
-
-
-			</script>
-		</div>
-
-		<div class="footer_bar">
-			<div class="share_icon_group">
-				<!-- Load Facebook SDK for JavaScript -->
-				<div class="fb-share-button-frame">
-					<div id="fb-root"></div>
-					<script>
-						(function (d, s, id) {
-							var js, fjs = d.getElementsByTagName(s)[0];
-							if (d.getElementById(id)) return;
-							js = d.createElement(s); js.id = id;
-							js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-							fjs.parentNode.insertBefore(js, fjs);
-						}(document, 'script', 'facebook-jssdk'));
-					</script>
-					<div class="fb-share-button"
-						 data-href="https://wkyjim.github.io/EP-Investment/index"
-						 data-layout="button"></div>
+		<form id="form1" method="post">
+			<div class="treemap_form_block">
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="location">Market</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
+							<option value="US">U.S.</option>
+							<option value="HK">Hong Kong</option>
+							<option value="CN">China</option>
+						</select>
+					</div>
 				</div>
-				<!--LinkedIn share icon-->
-				<div class="linkedin-share-button-frame">
-					<a class="linkedin-share-button" href="https://www.linkedin.com/shareArticle?mini=true&url=https://wkyjim.github.io/EP-Investment/index&title=EP Investment&summary=Simple and Intuitive charts that help you invest better&source=EP Investment" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
-						<img src="http://chillyfacts.com/wp-content/uploads/2017/06/LinkedIN.gif" alt="" width="54" height="20" />
-					</a>
-				</div>
-				<!--Tweeter share icon-->
-				<div class="twitter-share-button-frame">
-					<a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text="Hey guys! EP Investment is a great website that offers simple but intuitive analysis that help me quickly extrect insights from the market! Check it out!" data-url="https://wkyjim.github.io/EP-Investment/index" data-lang="en" data-show-count="false">Tweet</a>
-					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="data_type">Data Type</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
+							<option value="pe_ratio">PE ratio</option>
+							<option value="pb_ratio">PB ratio</option>
+						</select>
+					</div>
 				</div>
 			</div>
-		</div>
+		</form>
+	</div>
+	<p class="explanation">
+		Percentage change plot shows outperformers and underperformers;
+		<br> Amount and Volume plots show stocks with highest transaction;
+		<br>Percentage change Volume Multiple plot shows stocks surged or plunged due to high volume.
+	</p>
+	<div class="treemap_container">
+		<iframe id="treemapIframe" src=""
+				frameborder="0" width="100%" height="1000"></iframe>
+		<script>
+			document.getElementById("treemapIframe").src =
 
-	</body>
+
+
+				<span id="myUrl"></span>;
+
+
+
+
+		</script>
+	</div>
+
+	<div class="footer_bar">
+		<div class="share_icon_group">
+			<!-- Load Facebook SDK for JavaScript -->
+			<div class="fb-share-button-frame">
+				<div id="fb-root"></div>
+				<script>
+					(function (d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
+				<div class="fb-share-button"
+					 data-href="https://wkyjim.github.io/EP-Investment/index"
+					 data-layout="button"></div>
+			</div>
+			<!--LinkedIn share icon-->
+			<div class="linkedin-share-button-frame">
+				<a class="linkedin-share-button" href="https://www.linkedin.com/shareArticle?mini=true&url=https://wkyjim.github.io/EP-Investment/index&title=EP Investment&summary=Simple and Intuitive charts that help you invest better&source=EP Investment" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+					<img src="http://chillyfacts.com/wp-content/uploads/2017/06/LinkedIN.gif" alt="" width="54" height="20" />
+				</a>
+			</div>
+			<!--Tweeter share icon-->
+			<div class="twitter-share-button-frame">
+				<a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text="Hey guys! EP Investment is a great website that offers simple but intuitive analysis that help me quickly extrect insights from the market! Check it out!" data-url="https://wkyjim.github.io/EP-Investment/index" data-lang="en" data-show-count="false">Tweet</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+	</div>
+
+</body>
 </html>

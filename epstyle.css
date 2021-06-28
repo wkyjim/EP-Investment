@@ -255,19 +255,18 @@ body {
         margin-left: 5vw;
     }
 
-@media screen and (max-height: 45vw) {
-    .sidenav {
-        padding-top: 1.5vw;
-    }
-
-        .sidenav a {
-            font-size: 1.8vw;
-        }
-}
 
 .menu-button {
     font-size: 3vw;
     cursor: pointer;
     position: fixed;
     right: 2vw;
+    border-color: rgb(255,255,255);
+}
+
+.stroke {
+    width: 3.5vw;
+    height: 0.5vw;
+    background-color: white;
+    margin: 0.6vw 0;
 }

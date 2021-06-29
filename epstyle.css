@@ -193,26 +193,26 @@
 
 .share_icon_group {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .fb-share-button-frame {
     display: inline-block;
-    margin: 0 2vw 2px 2vw;
+    margin: 0 1vw 0 1vw;
     bottom: 0;
 }
 
 .linkedin-share-button-frame {
     display: inline-block;
-    margin: 0 2vw 0 2vw;
+    margin: 0 1vw 0 1vw;
     bottom: 0;
 }
 
 .twitter-share-button-frame {
     display: inline-block;
-    margin: 0 2vw 0 2vw;
+    margin: 0 1vw 0 1vw;
     bottom: 0;
 }
 

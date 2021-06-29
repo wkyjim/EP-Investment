@@ -2,7 +2,22 @@
 <head>
 	<title>Stock Connect</title>
 	<link rel="stylesheet" href="https://wkyjim.github.io/EP-Investment/epstyle.css">
-	
+
+	<!-- dropdown box-->
+	<script type="text/javascript">
+		function setIframeSource() {
+			var theLoc = document.getElementById('location');
+			var theDataType = document.getElementById('data_type');
+			var theDayRange = document.getElementById('day_range');
+			var theIframe = document.getElementById('treemapIframe');
+			var theUrl;
+
+			theUrl = "https://wkyjim.github.io/EP-Investment/stock_connect/" + theLoc.options[theLoc.selectedIndex].value + "/latest_" + theDataType.options[theDataType.selectedIndex].value + "_" + theDayRange.options[theDayRange.selectedIndex].value + "_treemap";
+			document.getElementById("myUrl").innerHTML = theUrl;
+			theIframe.src = theUrl;
+		}
+	</script>
+
 	<!-- Side Navigation-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -113,11 +128,11 @@
 	<div class="footer_bar">
 		<div class="share_icon_group">
 			<!--Facebook share icon-->
-            <div class="fb-share-button-frame">
-                <a class="fb-share-button" href="https://www.facebook.com/sharer/sharer.php?u=https://wkyjim.github.io/EP-Investment/index" target="_blank" rel="noopener">
-                    <img src="https://wkyjim.github.io/EP-Investment/photos/fb_share.png" width="65px" height="22px" alt="Share on Facebook">
-                </a>
-            </div>
+			<div class="fb-share-button-frame">
+				<a class="fb-share-button" href="https://www.facebook.com/sharer/sharer.php?u=https://wkyjim.github.io/EP-Investment/index" target="_blank" rel="noopener">
+					<img src="https://wkyjim.github.io/EP-Investment/photos/fb_share.png" width="65px" height="22px" alt="Share on Facebook">
+				</a>
+			</div>
 			<!--LinkedIn share icon-->
 			<div class="linkedin-share-button-frame">
 				<a class="linkedin-share-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://wkyjim.github.io/EP-Investment/index" target="_blank" rel="noopener">

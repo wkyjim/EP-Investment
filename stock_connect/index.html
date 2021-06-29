@@ -100,7 +100,7 @@
 						<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
 							<option value="pct_change">Percentage Change</option>
 							<option value="shareholding_change">Change in Shareholding</option>
-							<option value="share_change_pct">Change in Shareholding to Total no. of Shares</option>
+							<option value="share_change_pct">Change in Shareholding to Issued Shares</option>
 							<option value="market_cap_change">Change in Value of Shareholding</option>
 						</select>
 					</div>
@@ -109,8 +109,10 @@
 		</form>
 	</div>
 	<p class="explanation">
-		Holding Market Cap Change plot compares the change in market capitalization under Stock Connect holdings;
-		<br> Holding Percentage Change plot compares the change in percentage of shares under Stock Connect holdings;
+		Percentage Change chart compares the return of stocks;
+		<br>Change in Shareholding chart compares the change in number of shares held under Stock Connect;
+		<br>Change in Shareholding to Issued Shares chart compares the change in percentage of shares held under Stock Connect relative to all issued shares;
+		<br>Change in Value of Shareholding chart compares the change in value (market capitalization) held under Stock Connect;
 	</p>
 	<div class="treemap_container">
 		<iframe id="treemapIframe" src=""

@@ -177,9 +177,9 @@
 .explanation {
     font-size: 2vw;
     color: rgba(29,41,81,1);
-    text-align: center;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    text-align: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .footer_bar {

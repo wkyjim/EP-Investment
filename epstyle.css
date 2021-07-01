@@ -200,6 +200,7 @@
 
 .share_icon_group {
     display: flex;
+    top: 8vw;
 }
 
 .fb-share-button-frame {

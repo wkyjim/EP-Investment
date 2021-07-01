@@ -191,11 +191,15 @@
     background: rgba(190,190,190,0.5);
 }
 
-.share_icon_group {
+.share_icon_group_old {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.share_icon_group {
+    display:flex;
 }
 
 .fb-share-button-frame {

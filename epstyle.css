@@ -269,6 +269,8 @@ body {
 
 
 @media screen and (max-width: 1000px) {
+
+    /* sidenav format */
     .share_icon_group {
         display: block;
         position:absolute;
@@ -289,35 +291,41 @@ body {
         text-align: left;
     }
 
-    .realtime_sc_container {
-        display: block;
-        justify-content: center;
-    }
-
+    /* broad market page */
     .broad_market_analysis_container {
-        display: block;
-        justify-content: center;
-    }
-
-    .index_analysis_container {
         display: block;
         justify-content: center;
     }
     #market_ma {
         margin-left: auto;
         margin-right: auto;
-        width:100vw;
+        width: 100vw;
     }
+
     #broad_market {
         margin-left: auto;
         margin-right: auto;
         width: 100vw;
     }
+
+    /* index page */
+    .index_analysis_container {
+        display: block;
+        justify-content: center;
+    }
+
     #index_analysis {
         margin-left: auto;
         margin-right: auto;
         width: 100vw;
     }
+
+    /* stock connect page */
+    .realtime_sc_container {
+        display: block;
+        justify-content: center;
+    }
+
     #sc_total_flow {
         margin-left: auto;
         margin-right: auto;
@@ -328,6 +336,9 @@ body {
         margin-right: auto;
         width: 100vw;
     }
+
+    /* news page */
+
     .news_news_gp {
         display: block;
         justify-content: center;
@@ -338,8 +349,8 @@ body {
         margin-right: auto;
         width: 100vw;
     }
- 
-    <!-- Side Navigation-- >
+
+    /* Home page */
 
     .external_contents {
         display: block;

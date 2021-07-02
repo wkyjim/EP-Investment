@@ -338,4 +338,30 @@ body {
         margin-right: auto;
         width: 100vw;
     }
+ 
+    <!-- Side Navigation-- >
+
+    .external_contents {
+        display: block;
+        justify-content: center;
+    }
+    .calender_news {
+        display: block;
+        justify-content: center;
+    }
+    .calender {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+    .home_news {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+    .candle_chart {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
 }

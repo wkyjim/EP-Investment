@@ -368,6 +368,9 @@ body {
         margin-right: auto;
         width: 90vw;
         height: 40vw;
+        display: block;
+        border: 0;
+        padding: 2vw;
     }
 
     .home_news {
@@ -375,6 +378,8 @@ body {
         margin-right: auto;
         width: 90vw;
         height: 40vw;
+        border: 0;
+        padding: 2vw;
     }
 
     .candle_chart {
@@ -382,5 +387,7 @@ body {
         margin-right: auto;
         width: 90vw;
         height: 50vw;
+        border: 0;
+        padding: 2vw;
     }
 }

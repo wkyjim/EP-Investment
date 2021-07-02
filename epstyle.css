@@ -349,6 +349,7 @@ body {
     /* Home page */
 
     .home_external_contents {
+        position:relative;
         display: block;
         justify-content: center;
     }

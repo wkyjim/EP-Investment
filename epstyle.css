@@ -378,6 +378,7 @@ body {
         margin-right: auto;
         width: 90vw;
         height: 40vw;
+        display: block;
         border: 0;
         padding: 2vw;
     }
@@ -387,6 +388,7 @@ body {
         margin-right: auto;
         width: 90vw;
         height: 50vw;
+        display: block;
         border: 0;
         padding: 2vw;
     }

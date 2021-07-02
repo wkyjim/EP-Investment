@@ -306,21 +306,26 @@ body {
     #market_ma {
         margin-left: auto;
         margin-right: auto;
+        width:100vw;
     }
     #broad_market {
         margin-left: auto;
         margin-right: auto;
+        width: 100vw;
     }
     #index_analysis {
         margin-left: auto;
         margin-right: auto;
+        width: 100vw;
     }
     #sc_total_flow {
         margin-left: auto;
         margin-right: auto;
+        width: 100vw;
     }
     #sc_top_ten {
         margin-left: auto;
         margin-right: auto;
+        width: 100vw;
     }
 }

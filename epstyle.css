@@ -200,7 +200,7 @@
 
 .share_icon_group {
     display: flex;
-    top: 7vw;
+    top: 2vw;
 }
 
 .fb-share-button-frame {
@@ -236,7 +236,7 @@ body {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 10vw;
+    padding-top: 6vw;
     text-align: left;
 }
 
@@ -281,4 +281,25 @@ body {
 realtime_sc_container {
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .share_icon_group {
+        display: block;
+        top: 2vw;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10vw;
+        text-align: left;
+    }
 }

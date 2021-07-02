@@ -355,18 +355,24 @@ body {
     }
 
     .home_calender {
+        margin-left: auto;
+        margin-right: auto;
         width: 100vw;
         height: 20vw;
         border: 0px;
     }
 
     .home_news {
+        margin-left: auto;
+        margin-right: auto;
         width: 100vw;
         height: 20vw;
         border: 0px;
     }
 
     .candle_chart {
+        margin-left: auto;
+        margin-right: auto;
         width: 100vw;
         height: 40vw;
         border: 0px;

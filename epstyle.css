@@ -201,25 +201,9 @@
 .share_icon_group {
     display: flex;
     top: 0;
+    padding-bottom: 1vw;
 }
 
-.fb-share-button-frame {
-    display: inline-block;
-    margin: 0 1vw 0 1vw;
-    bottom: 0;
-}
-
-.linkedin-share-button-frame {
-    display: inline-block;
-    margin: 0 1vw 0 1vw;
-    bottom: 0;
-}
-
-.twitter-share-button-frame {
-    display: inline-block;
-    margin: 0 1vw 0 1vw;
-    bottom: 0;
-}
 
 body {
     font-family: Trebuchet MS;
@@ -236,7 +220,7 @@ body {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 6vw;
+    padding-top: 4vw;
     text-align: left;
 }
 

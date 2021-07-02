@@ -72,8 +72,7 @@
 }
 
 .home_external_contents {
-    position: fixed;
-    top: 60vw;
+    position: relative;
     width: 100vw;
 }
 
@@ -350,9 +349,8 @@ body {
     /* Home page */
 
     .home_external_contents {
-        position: fixed;
+        position: relative;
         display: block;
-        top: 60vw;
         width: 100vw;
     }
 

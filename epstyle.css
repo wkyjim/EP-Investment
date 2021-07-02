@@ -288,4 +288,15 @@ body {
         padding-top: 4vw;
         text-align: left;
     }
+
+    .realtime_sc_container {
+        display: block;
+        justify-content: center;
+    }
+
+    .realtime_sc_container {
+        display: block;
+        justify-content: center;
+    }
+
 }

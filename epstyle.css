@@ -328,4 +328,14 @@ body {
         margin-right: auto;
         width: 100vw;
     }
+    .news_news_gp {
+        display: block;
+        justify-content: center;
+    }
+
+    .news_news {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
 }

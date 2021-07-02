@@ -71,38 +71,6 @@
     font-weight: bold;
 }
 
-.home_external_contents {
-    position: relative;
-    width: 100vw;
-}
-
-.home_calender {
-    position: absolute;
-    width: 40vw;
-    height: 20vw;
-    top: 0;
-    left: 0;
-    border: 0px;
-}
-
-.home_news {
-    position: absolute;
-    width: 40vw;
-    height: 20vw;
-    top: 21vw;
-    left:0;
-    border: 0px;
-}
-
-.candle_chart {
-    position: absolute;
-    width: 57vw;
-    height: 42vw;
-    top:0;
-    left: 41vw;
-    border: 0px;
-}
-
 .broad_market_analysis_container {
     display: flex;
     justify-content: center;
@@ -262,7 +230,39 @@ body {
     justify-content: center;
 }
 
+@media screen and (min-width: 1000px) {
+    .home_external_contents {
+        position: relative;
+        width: 100vw;
+    }
 
+    .home_calender {
+        position: absolute;
+        width: 40vw;
+        height: 20vw;
+        top: 0;
+        left: 0;
+        border: 0px;
+    }
+
+    .home_news {
+        position: absolute;
+        width: 40vw;
+        height: 20vw;
+        top: 21vw;
+        left: 0;
+        border: 0px;
+    }
+
+    .candle_chart {
+        position: absolute;
+        width: 57vw;
+        height: 42vw;
+        top: 0;
+        left: 41vw;
+        border: 0px;
+    }
+}
 @media screen and (max-width: 1000px) {
 
     /* sidenav format */
@@ -349,10 +349,10 @@ body {
     /* Home page */
 
     .home_external_contents {
-        position:relative;
+        width: 100vw;
+        position: relative;
         display: block;
         justify-content: center;
-        width:100vw;
     }
     /*
     #home_external_contents_item {

@@ -271,7 +271,7 @@ realtime_sc_container {
 @media screen and (max-width: 1000px) {
     .share_icon_group {
         display: block;
-        top: 30vw;
+        bottom: 5vw;
     }
     .sidenav {
         height: 100%;
@@ -283,7 +283,7 @@ realtime_sc_container {
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 0vw;
+        padding-top: 3vw;
         text-align: left;
     }
 }

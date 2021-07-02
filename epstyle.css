@@ -271,7 +271,8 @@ realtime_sc_container {
 @media screen and (max-width: 1000px) {
     .share_icon_group {
         display: block;
-        bottom: 5vw;
+        position:relative;
+        top: 30vw;
     }
     .sidenav {
         height: 100%;

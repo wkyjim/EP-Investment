@@ -315,4 +315,12 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    #sc_total_flow {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #sc_top_ten {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

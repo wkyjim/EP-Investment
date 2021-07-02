@@ -299,4 +299,8 @@ body {
         justify-content: center;
     }
 
+    .index_analysis_container {
+        display: block;
+        justify-content: center;
+    }
 }

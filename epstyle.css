@@ -200,7 +200,7 @@
 
 .share_icon_group {
     display: flex;
-    top: 2vw;
+    top: 0;
 }
 
 .fb-share-button-frame {
@@ -287,7 +287,7 @@ realtime_sc_container {
 @media screen and (max-width: 1000px) {
     .share_icon_group {
         display: block;
-        top: 2vw;
+        top: 30vw;
     }
     .sidenav {
         height: 100%;
@@ -299,7 +299,7 @@ realtime_sc_container {
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 10vw;
+        padding-top: 0vw;
         text-align: left;
     }
 }

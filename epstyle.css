@@ -262,7 +262,7 @@ body {
     margin: 0.6vw 0;
 }
 
-realtime_sc_container {
+.realtime_sc_container {
     display: flex;
     justify-content: center;
 }

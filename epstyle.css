@@ -272,7 +272,7 @@ realtime_sc_container {
     .share_icon_group {
         display: block;
         position:relative;
-        top: 30vw;
+        top: 50vw;
     }
     .sidenav {
         height: 100%;
@@ -284,7 +284,7 @@ realtime_sc_container {
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 3vw;
+        padding-top: 0;
         text-align: left;
     }
 }

@@ -40,7 +40,7 @@
     height: 35vw;
     width: 50vw;
     left: 50%;
-    margin: -17.5vw 0 0 -25vw;
+    margin-left: -25vw;
     border: 1.2vw solid white;
     background-color: rgba(0,0,0,0.5);
     text-align: center;

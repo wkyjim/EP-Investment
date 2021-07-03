@@ -33,6 +33,7 @@
     padding-left: 1vw;
 }
 
+/*
 .title_text_frame {
     position: absolute;
     top: 32vw;
@@ -43,6 +44,7 @@
     background-color: rgba(0,0,0,0.5);
     text-align: center;
 }
+    */
 
 .sub_title_text_frame {
     width: 35vw;

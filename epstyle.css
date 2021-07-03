@@ -282,18 +282,18 @@ body {
     }
 
     .fb-share-button {
-        top-padding: 2vw;
-        bottom-padding: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
 
     .linkedin-share-button {
-        top-padding: 2vw;
-        bottom-padding: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
 
     .twitter-share-button {
-        top-padding: 2vw;
-        bottom-padding: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
 
     .sidenav {

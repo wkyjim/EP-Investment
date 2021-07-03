@@ -35,13 +35,13 @@
 
 .title_text_frame {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 32vw;
+    margin: 0 auto;
     height: 35vw;
     width: 50vw;
-    transform: translate(-50%, -50%);
     border: 1.2vw solid white;
     background-color: rgba(0,0,0,0.5);
+    text-align: center;
 }
 
 .sub_title_text_frame {

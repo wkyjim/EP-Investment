@@ -5,19 +5,20 @@
 
 .top_bg {
     max-width: 100%;
+    border:0;
 }
 
 .logo {
     width: 20vw;
     height: 2.5vw;
     position: absolute;
-    top: 2%;
+    top: 4vw;
     left: 2%;
 }
 
 .page_links_container {
     position: absolute;
-    top: 2%;
+    top: 4vw;
     right: 2%;
 }
 

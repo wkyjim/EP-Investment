@@ -1,0 +1,45 @@
+<html dir="ltr">
+<head>
+	<title>EP Investment</title>
+	<link rel="stylesheet" href="https://wkyjim.github.io/EP-Investment/epstyle.css">
+	<link rel="icon" type="image/png" href="https://wkyjim.github.io/EP-Investment/photos/favicon.png">
+
+	<!-- Side Navigation-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- load header-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+	</script>
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+</head>
+<body>
+	<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/1.jpg">
+	<div class="title_text_frame">
+		<div class="sub_title_text_frame">
+			<div class="title_text">Simple & Intuitive</div>
+			<div class="title_discription_text">
+				Do you find it time-consuming to monitor the market?
+				<br>Do you feel frustrated because market changes quickly?
+				<br>Do you have difficulties in finding opportunities?
+				<br>Don't let them stop you!
+				<br>We offer data-driven analysis that helps with your investment, from understanding the trend to spotting the outperformers. With our charts, navigating through the market will become a no brainer. Share us to your friends if you like it!
+			</div>
+		</div>
+	</div>
+
+	<div class="home_external_contents">
+		<iframe id="home_external_contents_item" class="home_calender" src="https://sslecal2.forexprostools.com?ecoDayBackground=%237385a6&defaultFont=%234d526e&innerBorderColor=%23c0cfd6&borderColor=%234d526e&columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&features=datepicker,timezone,timeselector,filters&countries=5&importance=2,3&calType=week&timeZone=28&lang=1"
+				frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+		<iframe id="home_external_contents_item" class="home_news"
+				src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fwww.cnbc.com%2Fid%2F100003114%2Fdevice%2Frss%2Frss.html&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&showdate=1&linktarget=_blank&fullhtml=1&bordercol=%23d4d0c8&headbgcol=%234c516d&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%231d2951&ctl=0"></iframe>
+		<iframe id="home_external_contents_item" class="candle_chart" src="https://ssltvc.forexprostools.com/?pair_ID=166&height=1100&width=1900&interval=86400&plotStyle=candles&domain_ID=1&lang_ID=1&timezone_ID=7"></iframe>
+	</div>
+
+</body>
+</html>

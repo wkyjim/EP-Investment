@@ -96,15 +96,20 @@
     justify-content: center;
 }
 
-/*
+
 .treemap_form_block {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    width: 100vw;
-    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
 }
-*/
+
+
+.treemap_form_block_frame {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    top: 54vw;
+}
 
 .form_title {
     color: rgba(255,255,255,1);

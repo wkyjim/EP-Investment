@@ -48,41 +48,43 @@
 	</p>
 
 	<form id="form1" method="post">
-		<div class="treemap_form_block" style="position: absolute; top: 56vw; height: 35vw; width: 100vw; left: 50%; margin-left: -50vw; ">
-			<div class="treemap_form_signle_block">
-				<h4 class="form_title">
-					<label class="form_label" for="location">Market</label>
-				</h4>
-				<div style="text-align:center">
-					<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
-						<option value="HK">Hong Kong/ Southbound</option>
-						<option value="CN">China/ Northbound</option>
-					</select>
+		<div class="treemap_form_block_frame">
+			<div class="treemap_form_block">
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="location">Market</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
+							<option value="HK">Hong Kong/ Southbound</option>
+							<option value="CN">China/ Northbound</option>
+						</select>
+					</div>
 				</div>
-			</div>
-			<div class="treemap_form_signle_block">
-				<h4 class="form_title">
-					<label class="form_label" for="day_range">Day Range</label>
-				</h4>
-				<div style="text-align:center">
-					<select class="treemap_dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
-						<option value="1day">1 day</option>
-						<option value="5day">5 days</option>
-						<option value="10day">10 days</option>
-					</select>
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="day_range">Day Range</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
+							<option value="1day">1 day</option>
+							<option value="5day">5 days</option>
+							<option value="10day">10 days</option>
+						</select>
+					</div>
 				</div>
-			</div>
-			<div class="treemap_form_signle_block">
-				<h4 class="form_title">
-					<label class="form_label" for="data_type">Data Type</label>
-				</h4>
-				<div style="text-align:center">
-					<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
-						<option value="pct_change">Percentage Change</option>
-						<option value="shareholding_change">Change in Shareholding</option>
-						<option value="share_change_pct">Change in Shareholding to Issued Shares</option>
-						<option value="market_cap_change">Change in Value of Shareholding</option>
-					</select>
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="data_type">Data Type</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
+							<option value="pct_change">Percentage Change</option>
+							<option value="shareholding_change">Change in Shareholding</option>
+							<option value="share_change_pct">Change in Shareholding to Issued Shares</option>
+							<option value="market_cap_change">Change in Value of Shareholding</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</div>

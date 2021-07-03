@@ -21,106 +21,73 @@
 	<!-- Side Navigation-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- load header-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+	</script>
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
 </head>
 <body onload="setIframeSource()">
-	<div class="top_bg_container">
-		<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/3.jpg">
-		<a href="https://wkyjim.github.io/EP-Investment/index"> <img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png"> </a>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="share_icon_group">
-				<!--Facebook share icon-->
-				<a class="fb-share-button" href="https://www.facebook.com/sharer/sharer.php?u=https://wkyjim.github.io/EP-Investment/index" target="_blank" rel="noopener">
-					<img src="https://wkyjim.github.io/EP-Investment/photos/fb_share.png" width="65px" height="22px" alt="Share on Facebook">
-				</a>
-
-				<!--LinkedIn share icon-->
-
-				<a class="linkedin-share-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://wkyjim.github.io/EP-Investment/index" target="_blank" rel="noopener">
-					<img src="https://wkyjim.github.io/EP-Investment/photos/linkedin_share.png" width="70px" height="22px" alt="Share on LinkedIn">
-				</a>
-
-				<!--Tweeter share icon-->
-
-				<a class="twitter-share-button" href="http://twitter.com/share?text=Hey guys! EP Investment is a great website that offers simple but intuitive analysis that help me quickly extrect insights from the market! Check it out!&url=https://wkyjim.github.io/EP-Investment/index&hashtags=Trading,Investment,Markets" target="_blank" rel="noopener">
-					<img src="https://wkyjim.github.io/EP-Investment/photos/twitter_share.png" width="70px" height="22px" alt="Share on Twitter">
-				</a>
-			</div>
-			<a href="https://wkyjim.github.io/EP-Investment/index">Home</a>
-			<a href="https://wkyjim.github.io/EP-Investment/treemap/">Market Treemaps</a>
-			<a href="https://wkyjim.github.io/EP-Investment/stock_connect/">Stock Connect</a>
-			<a href="https://wkyjim.github.io/EP-Investment/valuation/">Valuation</a>
-			<a href="https://wkyjim.github.io/EP-Investment/broad_market/">Broad Market Analysis</a>
-			<a href="https://wkyjim.github.io/EP-Investment/index_analysis/">Index Analysis</a>
-			<a href="https://wkyjim.github.io/EP-Investment/news">News Feeds</a>
+	<div id="header"></div>
+	<img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/3.jpg">
+	<div class="title_text_frame">
+		<div class="sub_title_text_frame">
+			<div class="title_text">Stock Connect Treemaps</div>
+			<div class="title_discription_text">Please choose market, data type and day range</div>
 		</div>
-		<div class="menu-button" onclick="openNav()">
-			<div class="stroke"></div>
-			<div class="stroke"></div>
-			<div class="stroke"></div>
-		</div>
-		<script>
-			function openNav() {
-				document.getElementById("mySidenav").style.width = "35vw";
-			}
-
-			function closeNav() {
-				document.getElementById("mySidenav").style.width = "0";
-			}
-		</script>
-
-		<div class="title_text_frame">
-			<div class="sub_title_text_frame">
-				<div class="title_text">Stock Connect Treemaps</div>
-				<div class="title_discription_text">Please choose market, data type and day range</div>
-			</div>
-		</div>
-		<p style="display:none;">
-			<span id="myUrl"></span>
-		</p>
-
-
-		<form id="form1" method="post">
-			<div class="treemap_form_block">
-				<div class="treemap_form_signle_block">
-					<h4 class="form_title">
-						<label class="form_label" for="location">Market</label>
-					</h4>
-					<div style="text-align:center">
-						<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
-							<option value="HK">Hong Kong/ Southbound</option>
-							<option value="CN">China/ Northbound</option>
-						</select>
-					</div>
-				</div>
-				<div class="treemap_form_signle_block">
-					<h4 class="form_title">
-						<label class="form_label" for="day_range">Day Range</label>
-					</h4>
-					<div style="text-align:center">
-						<select class="treemap_dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
-							<option value="1day">1 day</option>
-							<option value="5day">5 days</option>
-							<option value="10day">10 days</option>
-						</select>
-					</div>
-				</div>
-				<div class="treemap_form_signle_block">
-					<h4 class="form_title">
-						<label class="form_label" for="data_type">Data Type</label>
-					</h4>
-					<div style="text-align:center">
-						<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
-							<option value="pct_change">Percentage Change</option>
-							<option value="shareholding_change">Change in Shareholding</option>
-							<option value="share_change_pct">Change in Shareholding to Issued Shares</option>
-							<option value="market_cap_change">Change in Value of Shareholding</option>
-						</select>
-					</div>
-				</div>
-			</div>
-		</form>
 	</div>
+
+	<p style="display:none;">
+		<span id="myUrl"></span>
+	</p>
+
+	<form id="form1" method="post">
+		<div class="treemap_form_block">
+			<div class="treemap_form_signle_block">
+				<h4 class="form_title">
+					<label class="form_label" for="location">Market</label>
+				</h4>
+				<div style="text-align:center">
+					<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
+						<option value="HK">Hong Kong/ Southbound</option>
+						<option value="CN">China/ Northbound</option>
+					</select>
+				</div>
+			</div>
+			<div class="treemap_form_signle_block">
+				<h4 class="form_title">
+					<label class="form_label" for="day_range">Day Range</label>
+				</h4>
+				<div style="text-align:center">
+					<select class="treemap_dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
+						<option value="1day">1 day</option>
+						<option value="5day">5 days</option>
+						<option value="10day">10 days</option>
+					</select>
+				</div>
+			</div>
+			<div class="treemap_form_signle_block">
+				<h4 class="form_title">
+					<label class="form_label" for="data_type">Data Type</label>
+				</h4>
+				<div style="text-align:center">
+					<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
+						<option value="pct_change">Percentage Change</option>
+						<option value="shareholding_change">Change in Shareholding</option>
+						<option value="share_change_pct">Change in Shareholding to Issued Shares</option>
+						<option value="market_cap_change">Change in Value of Shareholding</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</form>
+
 	<p class="explanation">
 		Percentage Change chart compares the return of stocks;
 		<br>Change in Shareholding chart compares the change in number of shares held under Stock Connect;

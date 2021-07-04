@@ -184,6 +184,12 @@ body {
     padding-bottom: 30px;
 }
 
+.contact_us {
+    padding: 0.9vw 0.9vw 0.9vw 3.5vw;
+    border: 0;
+    width: 150px;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -194,7 +200,7 @@ body {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 4vw;
+    padding-top: 2vw;
     text-align: left;
 }
 
@@ -279,26 +285,32 @@ body {
 @media screen and (max-width: 1000px) {
 
     /* sidenav format */
+    .contact_us {
+        padding: 0.9vw 0.9vw 0.9vw 3.5vw;
+        border: 0;
+        width: 70px;
+    }
+
     .share_icon_group {
         display: block;
         position: absolute;
-        top: 45vw;
+        top: 53vw;
         left: 0;
     }
 
     .fb-share-button {
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
     }
 
     .linkedin-share-button {
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
     }
 
     .twitter-share-button {
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
     }
 
     .sidenav {

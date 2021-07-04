@@ -185,9 +185,15 @@ body {
 }
 
 .contact_us {
-    padding: 0.9vw 0.9vw 0.9vw 3.5vw;
+    padding: 4vw 0.9vw 4vw 3.5vw;
     border: 0;
     width: 150px;
+    background-color: rgba(0,0,0,0);
+}
+
+.contact_us_button {
+    background-color: rgba(0,0,0,0);
+    border: 0;
 }
 
 .sidenav {
@@ -286,7 +292,7 @@ body {
 
     /* sidenav format */
     .contact_us {
-        padding: 0.9vw 0.9vw 0.9vw 3.5vw;
+        padding: 4vw 0.9vw 4vw 3.5vw;
         border: 0;
         width: 70px;
     }

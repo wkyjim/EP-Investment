@@ -165,12 +165,6 @@
     background: rgba(190,190,190,0.5);
 }
 
-.share_icon_group_old {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .share_icon_group {
     display: flex;
@@ -298,9 +292,9 @@ body {
     }
 
     .share_icon_group {
+        padding: 4vw 0.9vw 4vw 3.5vw;
         display: block;
         position: absolute;
-        top: 53vw;
         left: 0;
     }
 

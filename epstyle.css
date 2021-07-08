@@ -277,8 +277,6 @@ body {
 
     .share_icon_group {
         display: flex;
-        top: 0;
-        padding-bottom: 1vw;
     }
 }
 
@@ -292,7 +290,6 @@ body {
     }
 
     .share_icon_group {
-        padding: 2vw 0.9vw 2vw 3.5vw;
         display: block;
     }
 

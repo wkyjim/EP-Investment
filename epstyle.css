@@ -166,12 +166,6 @@
 }
 
 
-.share_icon_group {
-    display: flex;
-    top: 0;
-    padding-bottom: 1vw;
-}
-
 
 body {
     font-family: Trebuchet MS;
@@ -179,7 +173,7 @@ body {
 }
 
 .contact_us {
-    padding: 4vw 0.9vw 4vw 3.5vw;
+    padding: 2vw 0.9vw 2vw 3.5vw;
     border: 0;
     width: 150px;
     background-color: rgba(0,0,0,0);
@@ -280,22 +274,26 @@ body {
         left: 41vw;
         border: 0px;
     }
+
+    .share_icon_group {
+        display: flex;
+        top: 0;
+        padding-bottom: 1vw;
+    }
 }
 
 @media screen and (max-width: 1000px) {
 
     /* sidenav format */
     .contact_us {
-        padding: 4vw 0.9vw 4vw 3.5vw;
+        padding: 2vw 0.9vw 2vw 3.5vw;
         border: 0;
         width: 70px;
     }
 
     .share_icon_group {
-        padding: 4vw 0.9vw 4vw 3.5vw;
+        padding: 2vw 0.9vw 2vw 3.5vw;
         display: block;
-        position: absolute;
-        left: 0;
     }
 
     .fb-share-button {

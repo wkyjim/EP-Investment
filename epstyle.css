@@ -283,8 +283,6 @@ body {
     .econ_ind_container {
         display: flex;
         width: 98vw;
-        left: 50vw;
-        transform: translate(49vw,0);
     }
 
     .single_econ_ind_container {
@@ -292,7 +290,7 @@ body {
 
     .econ_chart {
         width: 32vw;
-        height: 300px;
+        height: 20vw;
     }
 
     .econ_ind_chart_title {
@@ -458,19 +456,18 @@ body {
     .econ_ind_container {
         display: block;
         width: 98vw;
-        left: 50vw;
-        transform: translate(49vw,0);
+        justify-content: center;
     }
 
     .single_econ_ind_container {
     }
 
     .econ_chart {
-        width: 600px;
-        height: 300px;
+        width: 98vw;
+        height: 50vw;
         position: relative;
         left: 50vw;
-        transform: translate(-300px,0);
+        transform: translate(-49vw,0);
     }
 
     .econ_ind_chart_title {

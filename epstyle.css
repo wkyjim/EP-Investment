@@ -280,7 +280,7 @@ body {
     }
     .econ_ind_container {
         display: flex;
-        width: 100vw;
+        width: 97vw;
     }
 
     .single_econ_ind_container {
@@ -449,9 +449,11 @@ body {
         border: 0;
         padding: 2vw;
     }
+
+/*economic indicators*/
     .econ_ind_container {
         display: block;
-        width: 100vw;
+        width: 97vw;
         justify-content: center;
     }
 

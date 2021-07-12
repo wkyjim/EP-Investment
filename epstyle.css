@@ -278,9 +278,13 @@ body {
     .share_icon_group {
         display: flex;
     }
+
+    /*economic indicators*/
     .econ_ind_container {
         display: flex;
-        width: 97vw;
+        width: 98vw;
+        left: 50vw;
+        transform: translate(49vw,0);
     }
 
     .single_econ_ind_container {
@@ -453,8 +457,9 @@ body {
 /*economic indicators*/
     .econ_ind_container {
         display: block;
-        width: 97vw;
-        justify-content: center;
+        width: 98vw;
+        left: 50vw;
+        transform: translate(49vw,0);
     }
 
     .single_econ_ind_container {

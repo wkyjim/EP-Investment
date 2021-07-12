@@ -278,6 +278,25 @@ body {
     .share_icon_group {
         display: flex;
     }
+    .econ_ind_container {
+        display: flex;
+        width: 100vw;
+    }
+
+    .single_econ_ind_container {
+    }
+
+    .econ_chart {
+        width: 32vw;
+        height: 300px;
+    }
+
+    .econ_ind_chart_title {
+        text-align: center;
+        color: rgb(76,81,109);
+        font-size: 2vw;
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -429,5 +448,28 @@ body {
         display: block;
         border: 0;
         padding: 2vw;
+    }
+    .econ_ind_container {
+        display: block;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .single_econ_ind_container {
+    }
+
+    .econ_chart {
+        width: 90vw;
+        height: 300px;
+        position: relative;
+        left: 50vw;
+        transform: translate(-45vw,0);
+    }
+
+    .econ_ind_chart_title {
+        text-align: center;
+        color: rgb(76,81,109);
+        font-size: 2vw;
+        font-weight: bold;
     }
 }

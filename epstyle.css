@@ -461,11 +461,11 @@ body {
     }
 
     .econ_chart {
-        width: 90vw;
+        width: 600px;
         height: 300px;
         position: relative;
         left: 50vw;
-        transform: translate(-45vw,0);
+        transform: translate(-300px,0);
     }
 
     .econ_ind_chart_title {

@@ -1,0 +1,65 @@
+<html dir="ltr">
+<head>
+    <title>News Feeds</title>
+    <link rel="stylesheet" href="https://wkyjim.github.io/EP-Investment/epstyle.css">
+    <link rel="icon" type="image/png" href="https://wkyjim.github.io/EP-Investment/photos/favicon.png">
+
+    <!-- Side Navigation-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- load header-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <img class="top_bg" alt="cityscape" src="https://wkyjim.github.io/EP-Investment/photos/8.jpg">
+    <div class="title_text_frame">
+        <div class="sub_title_text_frame">
+            <div class="title_text">US Economic Indicators</div>
+            <div class="title_discription_text">Charts pulled from Trading Economics and Federal Reserve</div>
+        </div>
+    </div>
+
+    <p class="chart_heading">GDP</p>
+    <div class="econ_ind_container">
+        <div class="single_econ_ind_container">
+            <p class="econ_ind_chart_title">GDP Growth Rate</p>
+            <iframe class="econ_chart" src='https://tradingeconomics.com/embed/?s=gdp+cqoq&v=202107092315v20200908&h=300&w=600&ref=/united-states/gdp-growth' frameborder='0' scrolling='no'></iframe>
+        </div>
+        <div class="single_econ_ind_container">
+            <p class="econ_ind_chart_title">GDP</p>
+            <iframe class="econ_chart" src='https://tradingeconomics.com/embed/?s=wgdpus&projection=te&v=202107092315v20200908&h=300&w=600&ref=/united-states/gdp' frameborder='0' scrolling='no'></iframe>
+        </div>
+        <div class="single_econ_ind_container">
+            <p class="econ_ind_chart_title">GDP per capital</p>
+            <iframe class="econ_chart" src='https://tradingeconomics.com/embed/?s=usanygdppcapkd&v=202107092315v20200908&h=300&w=600&ref=/united-states/gdp-per-capita' frameborder='0' scrolling='no'></iframe>
+        </div>
+    </div>
+
+    <p class="chart_heading">Employment</p>
+    <div class="econ_ind_container">
+        <div class="single_econ_ind_container">
+            <p class="econ_ind_chart_title">Unemployment Rate</p>
+            <iframe class="econ_chart" src='https://tradingeconomics.com/embed/?s=usurtot&v=202107092315v20200908&h=300&w=600&ref=/united-states/unemployment-rate' frameborder='0' scrolling='no'></iframe>
+        </div>
+        <div class="single_econ_ind_container">
+            <p class="econ_ind_chart_title">Non Farm Payrolls</p>
+            <iframe class="econ_chart" src='https://tradingeconomics.com/embed/?s=nfp+tch&v=202107092315v20200908&h=300&w=600&ref=/united-states/non-farm-payrolls' frameborder='0' scrolling='no'></iframe>
+        </div>
+        <div class="single_econ_ind_container">
+            <p class="econ_ind_chart_title">Initial Jobless Claims</p>
+            <iframe class="econ_chart" src='https://tradingeconomics.com/embed/?s=ijcusa&v=202107092315v20200908&h=300&w=600&ref=/united-states/jobless-claims' frameborder='0' scrolling='no'></iframe>
+        </div>
+    </div>
+
+</body>
+</html>

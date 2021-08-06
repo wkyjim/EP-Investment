@@ -1,3 +1,6 @@
 .vs/
 **/*.ai
+**/*.ini
+.github/
+.firebase/
 IG_templates/

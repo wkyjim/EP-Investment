@@ -12,8 +12,10 @@
     width: 20vw;
     height: 2.5vw;
     position: absolute;
-    top: 2vw;
-    left: 2vw;
+    top: 2.4vw;
+    right: 8vw;
+    margin: 0;
+    padding: 0;
 }
 
 .page_links_container {
@@ -231,6 +233,8 @@ body {
     position: absolute;
     top: 2vw;
     right: 2vw;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -239,6 +243,7 @@ body {
     height: 0.3vw;
     background-color: white;
     margin: 0.6vw 0;
+    padding: 0;
 }
 
 .realtime_sc_container {

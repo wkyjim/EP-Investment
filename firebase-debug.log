@@ -1,0 +1,28 @@
+[debug] [2021-08-10T04:13:17.532Z] ----------------------------------------------------------------------
+[debug] [2021-08-10T04:13:17.534Z] Command:       C:\Users\wkyji\DOWNLO~1\firebase-tools-instant-win.exe C:\Users\wkyji\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase deploy
+[debug] [2021-08-10T04:13:17.535Z] CLI Version:   9.16.0
+[debug] [2021-08-10T04:13:17.535Z] Platform:      win32
+[debug] [2021-08-10T04:13:17.535Z] Node Version:  v12.18.1
+[debug] [2021-08-10T04:13:17.536Z] Time:          Tue Aug 10 2021 12:13:17 GMT+0800 (Hong Kong Standard Time)
+[debug] [2021-08-10T04:13:17.536Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-10T04:13:17.592Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-10T04:13:17.592Z] > authorizing via signed-in user (wky.mysql@gmail.com)
+[debug] [2021-08-10T04:13:17.592Z] [iam] checking project ep-investment for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-10T04:13:17.595Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ep-investment:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-10T04:13:17.614Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2021-08-10T04:13:17.616Z] > refreshing access token with scopes: []
+[debug] [2021-08-10T04:13:17.616Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-10T04:13:17.621Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-08-10T04:13:17.627Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\wkyji\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Users\wkyji\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project ep-investment. Please make sure the project exists and your account has permission to access it.

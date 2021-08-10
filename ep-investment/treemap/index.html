@@ -1,0 +1,125 @@
+<html dir="ltr">
+<head>
+	<title>Treemaps</title>
+	<link rel="stylesheet" href="https://ep-investment.web.app/epstyle.css">
+	<link rel="icon" type="image/png" href="https://ep-investment.web.app/photos/favicon.png">
+
+	<!-- dropdown box-->
+	<script type="text/javascript">
+		function setIframeSource() {
+			var theLoc = document.getElementById('location');
+			var theDataType = document.getElementById('data_type');
+			var theDayRange = document.getElementById('day_range');
+			var theIframe = document.getElementById('treemapIframe');
+			var theUrl;
+
+            theUrl = "https://ep-investment.web.app/treemap/" + theLoc.options[theLoc.selectedIndex].value + "/latest_" + theDayRange.options[theDayRange.selectedIndex].value + "_" + theDataType.options[theDataType.selectedIndex].value + "_treemap.html";
+			document.getElementById("myUrl").innerHTML = theUrl;
+			theIframe.src = theUrl;
+		}
+	</script>
+
+	<!-- Side Navigation-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- load header-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+	</script>
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+</head>
+<body onload="setIframeSource()">
+	<div id="header"></div>
+	<img class="top_bg" alt="cityscape" src="https://ep-investment.web.app/photos/2.jpg">
+	<div class="title_text_frame">
+		<div class="sub_title_text_frame">
+			<div class="title_text">Market Treemaps</div>
+			<div class="title_discription_text">Please choose market, data type and day range</div>
+		</div>
+	</div>
+
+	<p style="display:none;">
+		<span id="myUrl"></span>
+	</p>
+
+	<form id="form1" method="post">
+		<div class="treemap_form_block_frame">
+			<div class="treemap_form_block">
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="location">Market</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
+							<option value="US">U.S.</option>
+							<option value="HK">Hong Kong</option>
+							<option value="CN">China</option>
+						</select>
+					</div>
+				</div>
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="day_range">Day Range</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="day_range" name="day_range" onchange="setIframeSource()">
+							<option value="1D">1 day</option>
+							<option value="5D">5 days</option>
+							<option value="10D">10 days</option>
+							<option value="20D">20 days</option>
+						</select>
+					</div>
+				</div>
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="data_type">Data Type</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
+							<option value="pct_change">Percentage Change</option>
+							<option value="turnover">Turnover</option>
+							<option value="pct_x_turnover">Percentage Change Turnover Multiple</option>
+							<option value="volume">Volume</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<p class="explanation">
+		Percentage change plot shows outperformers and underperformers;
+		<br> Amount and Volume plots show stocks with highest transaction;
+		<br>Percentage change Volume Multiple plot shows stocks surged or plunged due to high volume.
+	</p>
+	<div class="treemap_container">
+		<iframe id="treemapIframe" src=""
+				frameborder="0" width="100%" height="1000"></iframe>
+		<script>
+			document.getElementById("treemapIframe").src =
+				<span id="myUrl"></span>;
+		</script>
+	</div>
+
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/8.9.0/firebase-app.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="/__/firebase/8.9.0/firebase-analytics.js"></script>
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>

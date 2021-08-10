@@ -1,0 +1,105 @@
+<html dir="ltr">
+<head>
+	<title>Valuation</title>
+	<link rel="stylesheet" href="https://ep-investment.web.app/epstyle.css">
+	<link rel="icon" type="image/png" href="https://ep-investment.web.app/photos/favicon.png">
+
+	<!-- dropdown box-->
+	<script type="text/javascript">
+		function setIframeSource() {
+			var theLoc = document.getElementById('location');
+			var theDataType = document.getElementById('data_type');
+			var theDayRange = document.getElementById('day_range');
+			var theIframe = document.getElementById('treemapIframe');
+			var theUrl;
+
+            theUrl = "https://ep-investment.web.app/valuation/" + theLoc.options[theLoc.selectedIndex].value + "/latest_" + theDataType.options[theDataType.selectedIndex].value + "_treemap.html";
+			document.getElementById("myUrl").innerHTML = theUrl;
+			theIframe.src = theUrl;
+		}
+	</script>
+
+	<!-- Side Navigation-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- load header-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+	</script>
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+</head>
+<body onload="setIframeSource()">
+	<div id="header"></div>
+	<img class="top_bg" alt="cityscape" src="https://ep-investment.web.app/photos/4.jpg">
+	<div class="title_text_frame">
+		<div class="sub_title_text_frame">
+			<div class="title_text">Valuation Treemaps</div>
+			<div class="title_discription_text">Please choose market and data type</div>
+		</div>
+	</div>
+
+	<p style="display:none;">
+		<span id="myUrl"></span>
+	</p>
+
+	<form id="form1" method="post">
+		<div class="treemap_form_block_frame">
+			<div class="treemap_form_block">
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="location">Market</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="location" name="location" onchange="setIframeSource()">
+							<option value="US">U.S.</option>
+							<option value="HK">Hong Kong</option>
+							<option value="CN">China</option>
+						</select>
+					</div>
+				</div>
+				<div class="treemap_form_signle_block">
+					<h4 class="form_title">
+						<label class="form_label" for="data_type">Data Type</label>
+					</h4>
+					<div style="text-align:center">
+						<select class="treemap_dropdown_box" id="data_type" name="data_type" onchange="setIframeSource()">
+							<option value="pe_ratio">PE ratio</option>
+							<option value="pb_ratio">PB ratio</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div class="treemap_container">
+		<iframe id="treemapIframe" src=""
+				frameborder="0" width="100%" height="1000"></iframe>
+		<script>
+			document.getElementById("treemapIframe").src =
+				<span id="myUrl"></span>;
+		</script>
+	</div>
+
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/8.9.0/firebase-app.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="/__/firebase/8.9.0/firebase-analytics.js"></script>
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>

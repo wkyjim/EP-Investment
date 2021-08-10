@@ -1,0 +1,503 @@
+.top_bg_container {
+    position: relative;
+    text-align: center;
+}
+
+.top_bg {
+    max-width: 100%;
+    border:0;
+}
+
+.logo {
+    width: 20vw;
+    height: 2.5vw;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+}
+
+.page_links_container {
+    position: absolute;
+    top: 4%;
+    right: 2%;
+}
+
+.page_links {
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-right: 2px solid white;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+
+.title_text_frame {
+    position: absolute;
+    top: 14vw;
+    height: 35vw;
+    width: 50vw;
+    left: 50%;
+    margin-left: -25vw;
+    border: 1.2vw solid white;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+
+.sub_title_text_frame {
+    width: 35vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title_text {
+    color: rgba(255,255,255,1);
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.title_discription_text {
+    color: rgba(255,255,255,1);
+    font-size: 1.2vw;
+    margin-top: 3vw;
+    margin-top: 2vw;
+}
+
+.chart_heading {
+    text-align: center;
+    color: rgb(76,81,109);
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+.broad_market_analysis_container {
+    display: flex;
+    justify-content: center;
+}
+
+.news_news_gp {
+    display: flex;
+    justify-content: center;
+}
+
+.news_news {
+    width: 32vw;
+    height: 20vw;
+    border: 0px;
+}
+
+.index_analysis_container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.treemap_form_block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.treemap_form_block_frame {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    top: 54vw;
+}
+
+.form_title {
+    color: rgba(255,255,255,1);
+    text-align: center;
+    margin: 0.5vw;
+}
+
+.form_label {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.treemap_form_signle_block {
+    display: inline-block;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.treemap_dropdown_box {
+    background-color: #F5F5F5;
+    color: #4c516d;
+    border: none;
+    box-shadow: 0.3vw 0.3vw 0.3vw #C8C8C8;
+    width: 15vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+.treemap_container {
+    display: flex;
+    justify-content: center;
+}
+
+.explanation {
+    font-size: 2vw;
+    color: rgba(29,41,81,1);
+    text-align: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.footer_bar {
+    position: fixed;
+    padding: 0vw 2vw 0px 2vw;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: rgba(190,190,190,0.5);
+}
+
+
+
+body {
+    font-family: Trebuchet MS;
+    padding-bottom: 30px;
+}
+
+.contact_us {
+    padding: 2vw 0.9vw 2vw 3.5vw;
+    border: 0;
+    width: 150px;
+    background-color: rgba(0,0,0,0);
+}
+
+.contact_us_button {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 2vw;
+    text-align: left;
+}
+
+    .sidenav a {
+        padding: 0.9vw 0.9vw 0.9vw 3.5vw;
+        text-decoration: none;
+        font-size: 2.5vw;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 2.5vw;
+        font-size: 3.5vw;
+        margin-left: 5vw;
+    }
+    #loginscreen {
+
+    }
+
+
+
+.menu-button {
+    font-size: 3vw;
+    cursor: pointer;
+    border-color: rgb(255,255,255);
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+}
+
+
+.stroke {
+    width: 2.8vw;
+    height: 0.3vw;
+    background-color: white;
+    margin: 0.6vw 0;
+}
+
+.realtime_sc_container {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .home_external_contents {
+        position: relative;
+        width: 100vw;
+    }
+
+    .home_calender {
+        position: absolute;
+        width: 40vw;
+        height: 20vw;
+        top: 0;
+        left: 0;
+        border: 0px;
+    }
+
+    .home_news {
+        position: absolute;
+        width: 40vw;
+        height: 20vw;
+        top: 21vw;
+        left: 0;
+        border: 0px;
+    }
+
+    .candle_chart {
+        position: absolute;
+        width: 57vw;
+        height: 42vw;
+        top: 0;
+        left: 41vw;
+        border: 0px;
+    }
+
+    #loginscreen #login {
+        padding: 2vw 0.9vw 2vw 3.5vw;
+        border: 0;
+        width: 150px;
+        background-color: rgba(0,0,0,0);
+    }
+
+    .share_icon_group {
+        display: flex;
+    }
+
+    /*economic indicators*/
+    .econ_ind_container {
+        display: flex;
+        width: 98vw;
+    }
+
+    .single_econ_ind_container {
+    }
+
+    .econ_chart {
+        width: 32vw;
+        height: 20vw;
+    }
+
+    .econ_ind_chart_title {
+        text-align: center;
+        color: rgb(76,81,109);
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .sidenav #empty_box {
+        color: rgba(0,0,0,0);
+        border: none;
+        height:8vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* sidenav format */
+    .contact_us {
+        padding: 2vw 0.9vw 0 3.5vw;
+        border: 0;
+        width: 70px;
+    }
+
+    #loginscreen #login {
+        padding: 2vw 0.9vw 0 3.5vw;
+        border: 0;
+        width: 70px;
+        background-color: rgba(0,0,0,0);
+    }
+
+    .share_icon_group {
+        display: block;
+    }
+
+    .fb-share-button {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .linkedin-share-button {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .twitter-share-button {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 4vw;
+        text-align: left;
+    }
+
+    /* broad market page */
+    .broad_market_analysis_container {
+        display: block;
+        justify-content: center;
+    }
+
+    #market_ma {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+
+    #broad_market {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+
+    /* index page */
+    .index_analysis_container {
+        display: block;
+        justify-content: center;
+    }
+
+    #index_analysis {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+
+    /* stock connect page */
+    .realtime_sc_container {
+        display: block;
+        justify-content: center;
+    }
+
+    #sc_total_flow {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+
+    #sc_top_ten {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+
+    /* news page */
+
+    .news_news_gp {
+        display: block;
+        justify-content: center;
+    }
+
+    .news_news {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+        height: 50vw;
+    }
+
+    /* Home page */
+
+    .home_external_contents {
+        width: 100vw;
+        position: relative;
+        display: block;
+        justify-content: center;
+    }
+    /*
+    #home_external_contents_item {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        height: 40vw;
+    }
+    */
+
+    .home_calender {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        height: 80vw;
+        display: block;
+        border: 0;
+        padding: 2vw;
+    }
+
+    .home_news {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        height: 80vw;
+        display: block;
+        border: 0;
+        padding: 2vw;
+    }
+
+    .candle_chart {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        height: 120vw;
+        display: block;
+        border: 0;
+        padding: 2vw;
+    }
+
+/*economic indicators*/
+    .econ_ind_container {
+        display: block;
+        width: 98vw;
+        justify-content: center;
+    }
+
+    .single_econ_ind_container {
+    }
+
+    .econ_chart {
+        width: 98vw;
+        height: 50vw;
+        position: relative;
+        left: 50vw;
+        transform: translate(-49vw,0);
+    }
+
+    .econ_ind_chart_title {
+        text-align: center;
+        color: rgb(76,81,109);
+        font-size: 2vw;
+        font-weight: bold;
+    }
+}

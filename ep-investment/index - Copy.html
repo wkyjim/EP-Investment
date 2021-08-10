@@ -1,0 +1,106 @@
+<html dir="ltr">
+<head>
+	<title>EP Investment</title>
+	<link rel="stylesheet" href="https://ep-investment.web.app/epstyle.css">
+	<link rel="icon" type="image/png" href="https://ep-investment.web.app/photos/favicon.png">
+
+	<!-- Side Navigation-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- load header-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+	</script>
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+</head>
+<body>
+	<div id="loginscreen">
+		<img id="login" src="https://user-images.githubusercontent.com/1531669/41761606-83b5bd42-762a-11e8-811a-b78fdf68bc04.png">
+	</div>
+	<div id="dashboard">
+		<div id="userdetails"></div>
+		<button id="logout">Logout</button>
+	</div>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+	<!-- Firebase Authentication -->
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyDT6FnOimAP7lzgk4kddTVJoRecCSK96HI",
+			authDomain: "ep-investment.firebaseapp.com",
+			projectId: "ep-investment",
+			storageBucket: "ep-investment.appspot.com",
+			messagingSenderId: "1032528951280",
+			appId: "1:1032528951280:web:6f244f5b745e2517b48f35",
+			measurementId: "G-2D7DQDGZTK"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+
+		// login logout button
+		document.getElementById('dashboard').style.display="none"
+		document.getElementById("login").addEventListener("click", GoogleLogin)
+		document.getElementById("logout").addEventListener("click", LogoutUser)
+
+		let provider = new firebase.auth.GoogleAuthProvider()
+
+		function GoogleLogin() {
+			console.log("Google btn Call")
+			firebase.auth().signInWithPopup(provider).then(res => {
+				console.log(res.user)
+				document.getElementById('loginscreen').style.display="none"
+				document.getElementById('dashboard').style.display="block"
+				showUserDetails(res.user)
+			}).catch(e => {
+				console.log(e)
+			})
+		}
+		function showUserDetails(user){
+			document.getElementById("userdetails").innerHTML = `
+			<img src="${user.photoURL}" style="width:10%">
+			<P>Name: ${user.displayName}</p>
+			<P>Email: ${user.email}</p>
+		`
+		}
+
+		function checkAuthState(){
+			firebase.auth().onAuthStateChanged(user=>{
+				if(user){
+					document.getElementById('loginscreen').style.display="none"
+					document.getElementById('dashboard').style.display="block"
+					showUserDetails(user)
+				}else{
+
+				}
+			})
+		}
+
+		function LogoutUser() {
+			console.log("Logout Btn Call")
+			firebase.auth().signOut().then(()=>{
+				document.getElementById('loginscreen').style.display="block"
+				document.getElementById('dashboard').style.display="none"
+			}).catch(e=>{
+				console.log(e)
+			})
+		}
+		
+		checkAuthState()
+		
+	</script>
+
+</body>
+</html>

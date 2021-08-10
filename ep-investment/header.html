@@ -1,41 +1,49 @@
 <div class="top_bg_container">
-    <a href="https://wkyjim.github.io/EP-Investment/index"> <img class="logo" alt="EP Investment" src="https://wkyjim.github.io/EP-Investment/photos/logo.png"> </a>
+    <a href="https://ep-investment.web.app/index"> <img class="logo" alt="EP Investment" src="https://ep-investment.web.app/photos/logo.png"> </a>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="https://wkyjim.github.io/EP-Investment/index">Home</a>
-        <a href="https://wkyjim.github.io/EP-Investment/treemap/">Market Treemaps</a>
-        <a href="https://wkyjim.github.io/EP-Investment/stock_connect/">Stock Connect</a>
-        <a href="https://wkyjim.github.io/EP-Investment/valuation/">Valuation</a>
-        <a href="https://wkyjim.github.io/EP-Investment/broad_market/">Broad Market Analysis</a>
-        <a href="https://wkyjim.github.io/EP-Investment/index_analysis/">Index Analysis</a>
-        <a href="https://wkyjim.github.io/EP-Investment/economic_indicators">Economic Indicators</a>
-        <a href="https://wkyjim.github.io/EP-Investment/news">News Feeds</a>
+        <div id="loginscreen">
+            <img id="login" src="https://user-images.githubusercontent.com/1531669/41761606-83b5bd42-762a-11e8-811a-b78fdf68bc04.png">
+        </div>
+        <div id="dashboard">
+            <div id="userdetails"></div>
+            <button id="logout">Logout</button>
+        </div>
+        <a href="https://ep-investment.web.app/">Home</a>
+        <a href="https://ep-investment.web.app/treemap/">Market Treemaps</a>
+        <a href="https://ep-investment.web.app/stock_connect/">Stock Connect</a>
+        <a href="https://ep-investment.web.app/valuation/">Valuation</a>
+        <a href="https://ep-investment.web.app/broad_market/">Broad Market Analysis</a>
+        <a href="https://ep-investment.web.app/index_analysis/">Index Analysis</a>
+        <a href="https://ep-investment.web.app/economic_indicators.html">Economic Indicators</a>
+        <a href="https://ep-investment.web.app/news.html">News Feeds</a>
 
         <form action="mailto:easy-peasy.investment@outlook.com"
               method="POST"
               enctype="multipart/form-data"
               name="EmailForm">
-            <button class="contact_us_button" type="submit" value="Submit"><img class="contact_us" src='https://wkyjim.github.io/EP-Investment/photos/contact.png' alt="Contact Us"></button>
+            <button class="contact_us_button" type="submit" value="Submit"><img class="contact_us" src='https://ep-investment.web.app/photos/contact.png' alt="Contact Us"></button>
         </form>
 
         <div class="share_icon_group">
             <!--Facebook share icon-->
-            <a class="fb-share-button" href="https://www.facebook.com/sharer/sharer.php?u=https://wkyjim.github.io/EP-Investment/index" target="_blank" rel="noopener">
-                <img src="https://wkyjim.github.io/EP-Investment/photos/fb_share.png" width="65px" height="22px" alt="Share on Facebook">
+            <a class="fb-share-button" href="https://www.facebook.com/sharer/sharer.php?u=https://ep-investment.web.app/" target="_blank" rel="noopener">
+                <img src="https://ep-investment.web.app/photos/fb_share.png" width="65px" height="22px" alt="Share on Facebook">
             </a>
 
             <!--LinkedIn share icon-->
 
-            <a class="linkedin-share-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://wkyjim.github.io/EP-Investment/index" target="_blank" rel="noopener">
-                <img src="https://wkyjim.github.io/EP-Investment/photos/linkedin_share.png" width="70px" height="22px" alt="Share on LinkedIn">
+            <a class="linkedin-share-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://ep-investment.web.app/" target="_blank" rel="noopener">
+                <img src="https://ep-investment.web.app/photos/linkedin_share.png" width="70px" height="22px" alt="Share on LinkedIn">
             </a>
 
             <!--Tweeter share icon-->
 
-            <a class="twitter-share-button" href="http://twitter.com/share?text=Hey guys! EP Investment is a great website that offers simple but intuitive analysis that help me quickly extrect insights from the market! Check it out!&url=https://wkyjim.github.io/EP-Investment/index&hashtags=Trading,Investment,Markets" target="_blank" rel="noopener">
-                <img src="https://wkyjim.github.io/EP-Investment/photos/twitter_share.png" width="70px" height="22px" alt="Share on Twitter">
+            <a class="twitter-share-button" href="http://twitter.com/share?text=Hey guys! EP Investment is a great website that offers simple but intuitive analysis that help me quickly extrect insights from the market! Check it out!&url=https://ep-investment.web.app/&hashtags=Trading,Investment,Markets" target="_blank" rel="noopener">
+                <img src="https://ep-investment.web.app/photos/twitter_share.png" width="70px" height="22px" alt="Share on Twitter">
             </a>
         </div>
+        <div id="empty_box"></div>
 
     </div>
     <div class="menu-button" onclick="openNav()">
@@ -52,4 +60,79 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+	<!-- Firebase Authentication -->
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyDT6FnOimAP7lzgk4kddTVJoRecCSK96HI",
+			authDomain: "ep-investment.firebaseapp.com",
+			projectId: "ep-investment",
+			storageBucket: "ep-investment.appspot.com",
+			messagingSenderId: "1032528951280",
+			appId: "1:1032528951280:web:6f244f5b745e2517b48f35",
+			measurementId: "G-2D7DQDGZTK"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+
+		// login logout button
+		document.getElementById('dashboard').style.display="none"
+		document.getElementById("login").addEventListener("click", GoogleLogin)
+		document.getElementById("logout").addEventListener("click", LogoutUser)
+
+		let provider = new firebase.auth.GoogleAuthProvider()
+
+		function GoogleLogin() {
+			console.log("Google btn Call")
+			firebase.auth().signInWithPopup(provider).then(res => {
+				console.log(res.user)
+				document.getElementById('loginscreen').style.display="none"
+				document.getElementById('dashboard').style.display="block"
+				showUserDetails(res.user)
+			}).catch(e => {
+				console.log(e)
+			})
+		}
+		function showUserDetails(user){
+			document.getElementById("userdetails").innerHTML = `
+			<img src="${user.photoURL}" style="width:10%">
+			<P>Name: ${user.displayName}</p>
+			<P>Email: ${user.email}</p>
+		`
+		}
+
+		function checkAuthState(){
+			firebase.auth().onAuthStateChanged(user=>{
+				if(user){
+					document.getElementById('loginscreen').style.display="none"
+					document.getElementById('dashboard').style.display="block"
+					showUserDetails(user)
+				}else{
+
+				}
+			})
+		}
+
+		function LogoutUser() {
+			console.log("Logout Btn Call")
+			firebase.auth().signOut().then(()=>{
+				document.getElementById('loginscreen').style.display="block"
+				document.getElementById('dashboard').style.display="none"
+			}).catch(e=>{
+				console.log(e)
+			})
+		}
+		
+		checkAuthState()
+		
+	</script>
 </div>
